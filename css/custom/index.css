@@ -686,7 +686,7 @@ p{
   .main7Section .section1,
   .main7Section .section2{
     margin: 0px auto 25px;
-    width: 350px;
+    width: 325px;
     height: 350px;
   }
 }
@@ -1041,8 +1041,6 @@ margin: 15px 0 10px;
 }
 
 
-
-
 /*=====================================
             FEATURE PART STYLE
 ======================================*/
@@ -1135,6 +1133,9 @@ margin: 15px 0 10px;
 .niche-part .product-card {
   margin-bottom: 30px;
 }
+.ratingStar.singleStar{
+  display: none
+}
 
 @media (max-width: 575px) {
   .niche-nav .nav-tabs li .nav-link {
@@ -1143,9 +1144,37 @@ margin: 15px 0 10px;
     padding: 10px 10px;
   }
   .niche-part .tab-pane .row .col-sm-6.col-md-6.col-lg-4.col-xl-3{
-    width: 90%;
+    width: 47%;
     margin: 0 auto;
+    padding: 0;
   }
+  .ratingStar{
+    display: none;
+  }
+  .ratingStar.singleStar{
+    display: block
+  }
+  .companyReviews h6{
+    display: none;
+  }
+  .yearTag p {
+    font-size: 14px;
+    /* margin-right: 10px; */
+    line-height: 16px;
+    text-align: left;
+}
+.product-meta span{
+  display: none;
+}
+.product-info{
+  padding: 0;
+}
+.product-btn {
+  margin-left: -10px;
+}
+.niche-part .tab-pane .row{
+  padding: 0 20px;
+}
 }
 
 @media (min-width: 380px) and (max-width: 575px) {
