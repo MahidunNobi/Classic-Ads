@@ -602,3 +602,39 @@ margin-right: 10px;
   width: auto;
   font-size: 14px;
 }
+.descriptionBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 69%;
+}
+@media (max-width:992px) {
+  .common-card.price, .common-card.number{
+    display: block;
+  }
+  .ad-details-card h5{
+    font-size: 18px;
+  }
+  .ad-details-card h6.dexCompany{
+    font-size: 14px;
+  }
+  .ad-details-card .afterTitleSection .badge{
+
+    width: 45px;
+  }
+  .ad-standard .product-card.standard .product-media{
+    width: 34%;
+
+  }
+  .ad-standard .product-card.standard .product-media img{
+    width: 100%;
+  }
+  .middleBottomSec{
+    margin: 0;
+  }
+  .product-card.standard, .ad-standard .product-card.standard{
+    width: 100%;
+  }
+  .product-card{
+    margin: 0;
+  }
+}
