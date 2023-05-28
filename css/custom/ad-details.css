@@ -192,7 +192,7 @@ section.inner-section.ad-details-part textarea.form-control{
   width: 100%;
   padding: 10px 20px 0;
   margin-bottom: 20px;
-  border-bottom: 2px solid #0044bb;
+
   
 }
 
@@ -237,7 +237,7 @@ section.inner-section.ad-details-part textarea.form-control{
   width: 100%;
 }
 .common-card.askSec button{
-  border: 2px solid;
+
   border-radius: 8px;
   padding: 12px 30px;
   font-size: 17px;

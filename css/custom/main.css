@@ -3114,7 +3114,7 @@ h6.dexCompany {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .review-profile {
@@ -3130,7 +3130,7 @@ h6.dexCompany {
 }
 
 .review-avatar img {
-  width: 60px;
+  width: 50px;
   border-radius: 50%;
   border: 2px solid var(--white);
 }
@@ -3310,6 +3310,78 @@ h6.dexCompany {
 /*========================================
             ELEMENT STYLE END
 =========================================*/
+
+/* =================ADS DESIGN=============== */
+
+ .tab-pane .row {
+  justify-content: center;
+}
+
+ .product-card {
+  margin-bottom: 30px;
+}
+.ratingStar.singleStar{
+  display: none
+}
+
+@media (max-width: 575px) {
+.nav-tabs li .nav-link {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 10px;
+  }
+  .col-sm-6.col-md-6.col-lg-4.col-xl-3{
+    width: 47%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .ratingStar{
+    display: none;
+  }
+  .ratingStar.singleStar{
+    display: block
+  }
+  .companyReviews h6{
+    display: none;
+  }
+  .yearTag p {
+    font-size: 14px;
+    /* margin-right: 10px; */
+    line-height: 16px;
+    text-align: left;
+}
+.product-meta span{
+  display: none;
+}
+.product-info{
+  padding: 0;
+}
+.product-btn {
+  margin-left: -10px;
+}
+ .tab-pane .row{
+  padding: 0 20px;
+}
+
+}
+
+@media (min-width: 380px) and (max-width: 575px) {
+   .product-card {
+    width: 350px;
+    margin: 0px auto 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 990px;
+  }
+  .container .col-lg-3 {
+    padding: 0px 10px;
+  }
+}
+
+
 /*------------------- SEARCH BAR DESIGN--------------- */
 
 .searchBarMainDiv{
@@ -3793,10 +3865,10 @@ p.openTime {
 @media (max-width: 600px) {
   .AdsContainer .row{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+   
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
   .AdsContainer .row .singleAd.textSection{
     width: 72%;
@@ -3829,7 +3901,11 @@ p.openTime {
 }
 }
 
-
+.ad-details-card .product-card {
+  
+  background: var(--white); 
+  border: none;
+}
 
 /*========================================
             LAYOUT STYLE START
