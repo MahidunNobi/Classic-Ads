@@ -16,7 +16,7 @@ Author Profile  :  https://themeforest.net/user/mironcoder
   --gray: #777777;
   --blue: #1494a9;
   --white: #ffffff;
-  --chalk: #f5f5f5;
+  --chalk: #e9e9e9;
   --green: #11b76b;
   --purple: #b12fad;
   --orange: #e86121;
@@ -161,10 +161,18 @@ button:focus {
   text-align: center;
   margin-top: 20px;
 }
-
+.seller-details-mobile{
+  display: none;
+}
 @media (max-width: 991px) {
   .content-reverse {
     flex-wrap: wrap-reverse;
+  }
+  .seller-details-mobile{
+    display: block;
+  }
+  .seller-details-dextop{
+    display: none;
   }
 }
 
@@ -720,7 +728,7 @@ textarea.form-control {
     padding: 0px 15px;
   }
   .niche-nav{
-    margin: 0 10px;
+    /* margin: 0 10px; */
   }
 }
 
@@ -733,26 +741,6 @@ textarea.form-control {
 /* /////////////////////////////////
         POPULAR BRANDS START
 ////////////////-------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .section {
@@ -2907,7 +2895,10 @@ h6.dexCompany {
 @media (max-width: 575px) {
   .common-card {
     padding: 30px 25px;
+    margin: 20px auto;
+    width: 92%;
   }
+  
 }
 
 .message-list {
@@ -3116,6 +3107,7 @@ h6.dexCompany {
   justify-content: space-between;
   margin-bottom: 5px;
 }
+
 
 .review-profile {
   display: flex;
@@ -3744,8 +3736,8 @@ p.openTime {
   justify-content: center;
 }
 .xyz{
-  padding-right: 0 ;
-  margin: 8px 0;
+  padding: 0 ;
+  /* margin: 8px 0; */
 }
 .middleBottomSec .price {
   margin-right: 10px;

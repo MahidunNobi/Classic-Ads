@@ -166,6 +166,12 @@
 
   border-top: 1px solid #f3f3f3;
 }
+.ad-details-author .author-list li:nth-child(1){
+  border-top: none;
+}
+.common-card.seller-details-dextop .card-header{
+  margin-bottom: 10px;
+}
 .ReportSec button{
   padding: 3px 15px;
   border: 1px solid #0044bb;
@@ -586,7 +592,9 @@ margin-right: 10px;
 
 /* ============= AD Details Card Details style Start=============== */
 .ad-details-card{
-  margin: 20px 0 0;
+  margin: 0px 0 -50px;
+  padding-top: 50px;
+  background-color: var(--chalk);
 }
 .ad-details-card h5{
   font-size: 22px;
@@ -632,7 +640,8 @@ margin-right: 10px;
     margin: 0;
   }
   .product-card.standard, .ad-standard .product-card.standard{
-    width: 100%;
+    width: 92%;
+    margin: auto;
   }
   .product-card{
     margin: 0;
