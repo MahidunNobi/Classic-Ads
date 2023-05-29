@@ -104,3 +104,178 @@
     padding: 80px 0px;
   }
 }
+/*========= Custom============ */
+.hero{
+  background-image: url("https://www.ideamagix.com/assets/images/page-headers/contact-us-page-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.hero .container{
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.hero .text{
+  width: 60%;
+}
+.hero .text h3{
+  color: white;
+  margin-bottom: 20px;
+}
+.hero .cards{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero .card{
+  width: 33.33%;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactForm{
+  margin: 60px 0;
+}
+.contactForm .container .mainContact{
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  background-color: #ebebeb;
+}
+
+.contactForm .container .leftSection{
+  width: 30%;
+  padding: 20px 25px;
+  background: linear-gradient(to right, #0044bb, #4181ee );
+  color: white;
+}
+.contactForm .container .leftSection .desc{
+  margin-bottom: 20px;
+}
+.contactForm .container .leftSection .desc h4{
+  color: white;
+  margin-bottom: 10px;
+}
+.contactForm .container .leftSection .desc p{
+  line-height: 1.2;
+}
+.contactForm .container .leftSection .OfficeContact{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.contactForm .container .rightSection{
+  padding: 20px;
+  width: 70%;
+}
+.contactForm .container .rightSection form{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contactForm .container .rightSection .singleInputField.SubmitBtn{
+  text-align: right;
+  margin: 20px 0;
+}
+.contactForm .container .rightSection .singleInputField.SubmitBtn button{
+  padding: 10px 30px;
+  border: 2px solid #0044bb;
+  border-radius: 15px;
+  color: #0044bb;
+ transition: 0.3s;
+}
+.contactForm .container .rightSection .singleInputField.SubmitBtn button:hover{
+  background: #0044bb;
+  color: white;
+}
+.contactForm .container .rightSection .singleInputField{
+  width: 45%;
+}
+.contactForm .container .rightSection .singleInputField.checkBox{
+  display: flex;
+
+  align-items: center;
+}
+.contactForm .container .rightSection .singleInputField.checkBox input{
+  width: auto;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+.contactForm .container .rightSection .singleInputField.message{
+  width: 93%;
+}
+.contactForm .container .rightSection .singleInputField.message textarea{
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.contactForm .container .rightSection input{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.contactForm .container .rightSection select{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background: white;
+}
+.chooseFile button{
+  background: rgb(173, 172, 172);
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  transition: 0.2s;
+  box-shadow: inset 0 0 4px 4px #a8a8a8;
+}
+.chooseFile button:active{ 
+  box-shadow: inset 0 0 13px 2px #7a7a7a;
+}
+@media (max-width:991px) {
+  .hero .container{
+    flex-direction: column;
+  }
+  .hero .text{
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .hero .cards{
+    width: 90%;
+  }
+  .hero .card{
+    width: 115px;
+  }
+  .contactForm .container .mainContact{
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+  }
+  .contactForm .container .leftSection{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .contactForm .container .rightSection{
+   
+    width: 100%;
+  }
+  .contactForm .container .rightSection .singleInputField{
+    width: 100%;
+  }
+  .contactForm .container .rightSection .singleInputField.SubmitBtn button{
+    width: 100%;
+    background: #0044bb;
+    color: white;
+  }
+}
