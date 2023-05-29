@@ -110,3 +110,191 @@
     margin-top: 20px;
   }
 }
+/*========= Custom========== */
+
+.mainWho{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 30px;
+}
+.mainWho .whoAreWe{
+  width: 45%;
+}
+
+.mainWho h3{
+  font-size: 34px;
+}
+.mainWho .ourMission{
+  width: 45%;
+}
+.mainHelp{
+  margin: 100px 0;
+}
+.Hheader h3{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.mainHelp .Hblocks{
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainHelp .singleHBlock{
+  width: 30%;
+  padding: 20px 25px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+}
+.mainHelp .singleHBlock h3{
+  color: #0044bb;
+}
+.mainHelp .singleHBlock p{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.goodFrims{
+  margin: 0 0 50px;
+}
+.mainGoodFrims{
+  text-align: center;
+}
+.allFrims{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+.singleFrims{
+  width: 20%;
+  padding: 20px 15px;
+  border: 2px solid #0044bb;
+  border-radius: 10px 0 10px 0;
+  background: #0045bb27;
+}
+.singleFrims .icon{
+  font-size: 30px;
+  color: #0044bb;
+  margin-bottom: 20px;
+}
+.singleFrims .text h4{
+  color: #0044bb;
+
+}
+
+.partnership{
+  margin: 50px 0;
+}
+.mainPartnership h2{
+  margin-bottom: 8px;
+}
+.mainPartnership h2,
+.mainPartnership p{
+  text-align: center;
+}
+
+.allPrograms{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.singlePrograme{
+  width: 23%;
+  padding: 25px 20px;
+  border: 2px solid #0044bb;
+  border-radius: 7px;
+}
+.singlePrograme .icon i{
+  font-size: 30px;
+  background: #0044bb;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  margin-bottom: 15px;
+}
+.singlePrograme .text h4{
+  margin-bottom: 10px;
+}
+.singlePrograme .text p{
+  text-align: left;
+  margin: 20px 0;
+}
+.singlePrograme .button{
+  display: flex;
+  color: #0044bb;
+  align-items: center;
+}
+.singlePrograme .button:hover button.knowMore{
+  margin-right: 50px;
+}
+.singlePrograme .button button{
+  color: #0044bb;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.getInTouch {
+  text-align: center;
+  margin: 50px 0;
+}
+.getInTouch p{
+  color: #666;
+  margin-bottom: 20px;
+}
+.getInTouch button{
+  padding: 5px 20px;
+  border: 2px solid #0044bb;
+  border-radius: 5px;
+  color: #0044bb;  
+  transition: 0.4s;
+}
+.getInTouch button:hover{
+  background-color: #0044bb;
+  color: white;
+}
+
+@media (max-width:991px) {
+  .mainWho{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainWho .whoAreWe{
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  .mainWho .ourMission{
+    width: 95%;
+  }
+  .mainHelp .Hblocks{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainHelp .singleHBlock{
+    width: 95%;
+   margin-bottom: 15px;
+    
+    
+    border-radius: 15px;
+  }
+  .allFrims{
+   
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .singleFrims{
+    width: 90%;
+    margin: 20px 0;
+  }
+  .allPrograms{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .singlePrograme{
+    width: 95%;
+    margin: 20px 0;
+  }
+}
