@@ -161,8 +161,17 @@
 }
 .allFrims{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 30px 0;
+  align-items: center;
+}
+.allFrims i.fa-arrow-right,
+.allFrims i.fa-arrow-down {
+  font-size: 30px;
+  color: #0045bb6b;
+}
+.allFrims i.fa-arrow-down{
+  display: none;
 }
 .singleFrims{
   width: 20%;
@@ -282,6 +291,12 @@
     flex-direction: column;
     align-items: center;
   }
+.allFrims i.fa-arrow-right{
+  display: none;
+}
+.allFrims i.fa-arrow-down {
+  display: block
+}
   .singleFrims{
     width: 90%;
     margin: 20px 0;
