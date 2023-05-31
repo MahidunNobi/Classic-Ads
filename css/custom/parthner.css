@@ -1,0 +1,154 @@
+.parthnerHero{
+    padding: 60px 0;
+    background: #2e39bf;
+    color: white;
+    margin-bottom: 60px;
+}
+.mainHero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainHero .texts{
+    width: 45%;
+}
+.mainHero .texts h1{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.mainHero .texts p{
+    margin-bottom: 15px;
+}
+.mainHero .texts button, 
+.mainEdge button{
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    color: white; 
+    transition: all 0.3s;
+}
+.mainHero .texts button:hover, .mainEdge button:hover{
+    background-color: white;
+    color: #0044bb;
+}
+.mainHero .image{
+    width: 45%;
+}
+.mainHero .image img{
+    width: 100%;
+}
+.partnership{
+    margin: 50px 0;
+  }
+  .mainPartnership h2{
+    margin-bottom: 8px;
+  }
+  .mainPartnership h2,
+  .mainPartnership p{
+    text-align: center;
+  }
+  
+  .allPrograms{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .singlePrograme{
+    width: 23%;
+    padding: 25px 20px;
+    border: 2px solid #0044bb;
+    border-radius: 7px;
+  }
+  .singlePrograme .icon i{
+    font-size: 30px;
+    background: #0044bb;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .singlePrograme .text h4{
+    margin-bottom: 10px;
+  }
+  .singlePrograme .text p{
+    text-align: left;
+    margin: 20px 0;
+  }
+  .singlePrograme .button{
+    display: flex;
+    color: #0044bb;
+    align-items: center;
+  }
+  .singlePrograme .button:hover button.knowMore{
+    margin-right: 50px;
+  }
+  .singlePrograme .button button{
+    color: #0044bb;
+    margin-right: 20px;
+    transition: 0.3s;
+  }
+  .getInTouch {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .getInTouch p{
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .getInTouch button{
+    padding: 5px 20px;
+    border: 2px solid #0044bb;
+    border-radius: 5px;
+    color: #0044bb;  
+    transition: 0.4s;
+  }
+  .getInTouch button:hover{
+    background-color: #0044bb;
+    color: white;
+  }
+  .edge{
+    background-color: #2e39bf;
+    color: white;
+    padding: 50px 0;
+    
+  }
+.mainEdge{
+  text-align: center;
+}
+.mainEdge h1{
+  color: white;
+}
+.mainEdge p{
+  margin: 20px 0;
+}
+@media (max-width: 991px) {
+    .mainHero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    .mainHero .texts{
+        width: 95%;
+        margin: 20px 0 0;
+    }
+    .mainHero .texts h1{
+        font-size: 35px;
+    }
+    .mainHero .image{
+        width: 95%;
+    }
+    .allPrograms{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      .singlePrograme{
+        width: 95%;
+        margin: 20px 0;
+      }
+}

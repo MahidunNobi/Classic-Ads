@@ -1,3 +1,16 @@
+.card-header::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0px;
+  width: 50px;
+  height: 2px;
+  background: var(--primary);
+}
+.card-header {
+  margin-bottom: 10px;
+}
+
 /*=====================================
             BLOG-LIST PAGE STYLE
 ======================================*/
@@ -73,6 +86,7 @@
 }
 .blogNav{
   margin: 10px 0;
+  padding: 10px 0;
 }
 .blogNav ul{
   display: flex;
@@ -82,16 +96,25 @@
 }
 .blogNav ul li a{
   color: white;
-  padding: 10px 20px;
+  padding: 2px 20px;
+  background: #0044bb;
+  border-radius: 30px;
 }
 .blogNav ul li a.active{
-  border-bottom: 4px solid #0044bb;
+  background-color: white;
+  color: #0044bb;
 }
 .blogSection{
   margin: 60px 0;
 }
 .mainBlogs h2{
   font-size: 30px;
+}
+.LatestAllBlogs .blog-card{
+  width: 100%;
+}
+.LatestAllBlogs .blog-card .blog-meta li p{
+  font-size: 12px;
 }
 .blogs{
   display: flex;
@@ -157,9 +180,10 @@
   display: flex;
   width: 100%;
  margin: 20px 0;
+ justify-content: space-evenly;
 }
 .latestSingleBlog{
-  width: 33%;
+  width: 23%;
 }
 @media (max-width:991px) {
   .blogNav{
@@ -191,7 +215,7 @@
   }
   .LatestAllBlogs{
     flex-direction: column;
-   
+    justify-content: center;
   }
   .subBlogs .singleBlogCard .img{
     width: 240px;
