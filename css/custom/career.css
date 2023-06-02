@@ -131,4 +131,14 @@
         width: 95%;
         margin: 10px 0;
     }
+    .allInputFields{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .allInputFields .inputRow{
+        width: 95%;
+        margin: 10px 0;
+    }
 }

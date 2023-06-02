@@ -179,6 +179,7 @@
 .LatestAllBlogs{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
  margin: 20px 0;
  justify-content: space-evenly;
 }
@@ -235,5 +236,8 @@
   }
   .textInput p{
     font-size: 13px;
+  }
+  h1{
+    font-size: 30px;
   }
 }
