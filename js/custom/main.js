@@ -215,9 +215,23 @@ $('.review-dots-btn').on('click', function(){
     $(this).next('.review-widget-list').toggleClass('active');
 });
 
+//========================================
+//        FAQ CLICK EVENTS
+//========================================
 
+const questions = document.querySelectorAll(".mainQuestion ul li h3")
+const arrows = document.querySelectorAll("i.fa-solid.fa-angle-down")
+const answers = document.querySelectorAll(".mainQuestion ul li .answer")
+questions.forEach((e, i)=>{
+    e.addEventListener("click", ()=>{
+        console.log("Ok");
 
+        arrows[i].classList.contains("arrowRotate") ? arrows[i].classList.remove("arrowRotate") : arrows[i].classList.add("arrowRotate")
 
+        answers[i].classList.contains("showAnswer") ? answers[i].classList.remove("showAnswer") : answers[i].classList.add("showAnswer")
+
+    })
+})
 
 
 
