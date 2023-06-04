@@ -79,7 +79,7 @@ img{
     justify-content: space-evenly;
 }
 .mainMembership .allPlans .singlePlan{
-    width: 23%;
+    width: 45%;
     text-align: center;
     background: #005eff1c;
     padding: 25px 0;
@@ -237,8 +237,6 @@ img{
     .mainInterested {
         flex-direction: column;
         justify-content: center;
-        
-        
     }
     .mainInterested{
         text-align: center;
