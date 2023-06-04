@@ -3673,6 +3673,14 @@ h6.mobileCompany{
 .varrified {
   width: 68px;
 }
+.navigationTabs{
+  justify-content: space-between;
+}
+.navigationTabs li{
+  width: 50%;
+}
+
+
 @media (min-width:0px) and (max-width:992px) {
   .subcategoryBody .rightForm {
   display: none;
@@ -3681,8 +3689,6 @@ h6.mobileCompany{
   width: 100%;
 
 }
-
-
 
 
 .product-meta span {

@@ -1,0 +1,206 @@
+section.hero {
+    background: #f6f6f6;
+}
+.mainHero{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+}
+.mainHero .leftText{
+    width: 45%;
+}
+.mainHero .leftText p{
+    margin: 20px 0;
+}
+.mainHero .leftText button{
+    border: 2px solid #0044bb;
+    color: #0044bb;
+    transition: all 0.3s;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.mainHero .leftText button:hover{
+    background: #0044bb;
+    color: white;
+}
+.mainHero .rightImg{
+    width: 45%;
+    text-align: center;
+}
+.mainHero .rightImg img{
+    width: 55%;
+}
+.trasted{
+    padding: 100px 0;
+}
+.maintransted .text{
+    text-align: center;
+}
+.maintransted .text p{
+    margin-bottom: 20px;
+}
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.benefits .singleBenefit{
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+.benefits .singleBenefit .img{
+    width: 120px;
+}
+img{
+    width: 100%;
+}
+.benefits .singleBenefit .description p{
+   
+    line-height: 1.3;
+}
+.membership{
+    padding: 0 0 60px;
+}
+.mainMembership .text{
+    text-align: center;
+}
+.mainMembership .text p{
+    margin: 30px 0;
+}
+.mainMembership .allPlans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mainMembership .allPlans .singlePlan{
+    width: 23%;
+    text-align: center;
+    background: #005eff1c;
+    padding: 25px 0;
+    border: 2px solid #0044bb;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.mainMembership .allPlans .singlePlan h2{
+    font-size: 30px;
+    color: #0063ff;
+}
+
+.mainMembership .allPlans .singlePlan .img {
+    height: 200px ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.mainMembership .allPlans .singlePlan .description{
+    padding: 0 10px;
+}
+.mainMembership .allPlans .singlePlan .description p{
+ margin: 10px 0 20px;
+}
+.mainMembership .allPlans .singlePlan .planBenefits ul{
+    list-style-type: disc;
+    text-align: left;
+    
+    color: #000000;
+    font-size: 18px;
+    margin: 0 0 20px 40px ;
+}
+.mainMembership .allPlans .singlePlan .Btn button{
+    font-size: 18px;
+    border: 1px solid #0044bb;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 90%;
+    transition: all 0.3s;
+    font-weight: 600;
+    background: #0044bb;
+    color: white;
+}
+.mainMembership .allPlans .singlePlan .Btn button:hover{
+    color: #0044bb;
+    background-color: transparent;
+}
+.marchant{
+    margin: 30px 0;
+}
+.mainMarchant {
+    text-align: center;
+}
+.allMarchants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.mainMarchant h1{
+    margin-bottom: 20px;
+}
+.allMarchants .singleMarchants{
+    width: 23%;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+}
+.allMarchants .singleMarchants h1{
+    font-size: 70px; 
+    color: #adadad;
+    margin: 10px 0;
+}
+
+.allMarchants .singleMarchants p.firstPara{
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+@media (max-width: 911px) {
+    .mainHero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    .mainHero .leftText{
+        width: 95%;
+    }
+    .mainHero .rightImg{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .mainHero .rightImg img{
+        width: 100%;
+    }
+    .maintransted .text h1{
+        font-size: 30px;
+    }
+    .maintransted .text p{
+        font-size: 15px;
+    }
+    .benefits{
+        justify-content: space-evenly;
+    }
+    .benefits .singleBenefit{
+        width: 100%;
+       
+    }
+    .mainMembership .allPlans{
+        justify-content: center;
+    }
+    .mainMembership .allPlans .singlePlan{
+        width: 100%;
+        
+    }
+    .allMarchants{
+        justify-content: center;
+    }
+    .allMarchants .singleMarchants{
+        width: 80%;
+    }
+}

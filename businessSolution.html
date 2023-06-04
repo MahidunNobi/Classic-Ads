@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--=====================================
+                    META-TAG PART START
+        =======================================-->
+        <!-- REQUIRE META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- AUTHOR META -->
+        <meta name="author" content="Mironcoder">
+        <meta name="email" content="mironcoder@gmail.com">
+        <meta name="profile" content="https://themeforest.net/user/mironcoder">
+
+        <!-- TEMPLATE META -->
+        <meta name="name" content="Classicads">
+        <meta name="type" content="Classified Advertising">
+        <meta name="title" content="Classicads - Classified Ads HTML Template">
+        <meta name="keywords" content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">
+        <!--=====================================
+                    META-TAG PART END
+        =======================================-->
+
+        <!-- FOR WEBPAGE TITLE -->
+        <title>Home - Classicads</title>
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--=====================================
+                    CSS LINK PART START
+        =======================================-->
+        <!-- FAVICON -->
+        <link rel="icon" href="images/favicon.png">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+        <link rel="stylesheet" href="fonts/font-awesome/fontawesome.css">
+
+        <!-- VENDOR -->
+        <link rel="stylesheet" href="css/vendor/slick.min.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+
+        <!-- CUSTOM -->
+        <link rel="stylesheet" href="css/custom/main.css">
+        <link rel="stylesheet" href="css/custom/businessSolution.css">
+        <!--=====================================
+                    CSS LINK PART END
+        =======================================-->
+    </head>
+    <body>
+
+        <!--=====================================
+                    HEADER PART START
+        =======================================-->
+        <header class="header-part">
+
+            <div class=" relative">
+                
+
+                <div id="disclaimerSection" class="">
+                    <div>
+                        <p>Disclainer:</p>
+                        <marquee behavior="scroll" direction="left"> This is disclaimer</marquee>
+                    </div>
+                </div>
+
+                <div class="container"> 
+                <div class="header-content">
+                    <div class="header-left">
+                        <button type="button" class="header-widget sidebar-btn">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                        <a href="index.html" class="header-logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                       
+                        <!-- <button type="button" class="header-widget search-btn">
+                            <i class="fas fa-search"></i>
+                        </button> -->
+                    </div>
+                    <!-- -------------Right Navbars--------------------- -->
+                   <div id="rightNav">
+                    <ul id="Navbar-ul">
+                        <li id="login-Li">
+                             <i class="fa-solid fa-user"></i>  
+                             <div> 
+                                <a id="login-A" href="#">Login</a> or  <a href="#">Register</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Brand Info</a></li>
+                        <li><a href="#"> Post Free Ad</a></li>
+                        <li><a href=""> List Your Business</a></li>
+                        <li><a href=""> <i class="fa-solid fa-bullhorn"></i> Advertise with Us </a></li>
+                        <li> <a href=""> <i class="fa-solid fa-message"></i>  Chat with Us</a></li>
+                    </ul>
+                   <a href="ad-post.html" class="btn btn-inline post-btn">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>post your ad</span>
+                </a>
+                   </div>
+                   
+
+                   <!-- <div id="MenuBar"> <button onclick="showMobileMenu()">  <i class="fa-solid fa-bars"></i> </button>  </div> -->
+                </div>
+            </div>
+        
+
+            </div>
+        </header>
+        <!--=====================================
+                    HEADER PART END
+        =======================================-->
+
+
+
+    
+
+
+         <!--=====================================
+                    SIDEBAR PART START
+        =======================================-->
+        <aside class="sidebar-part">
+            <div class="sidebar-body">
+                <div class="sidebar-header">
+                    <a href="index.html" class="sidebar-logo"><img src="images/logo.png" alt="logo"></a>
+                    <button class="sidebar-cross"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="sidebar-content">
+                    <div class="sidebar-profile">
+                        <a href="#" class="sidebar-avatar"><img src="images/avatar/01.jpg" alt="avatar"></a>
+                        <h4><a href="#" class="sidebar-name">Jackon Honson</a></h4>
+                        <a href="ad-post.html" class="btn btn-inline sidebar-post">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>post your ad</span>
+                        </a>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul class="nav nav-tabs navigationTabs">
+                            <li><a href="#main-menu" class="nav-link active" data-toggle="tab">Main Menu</a></li>
+                            <li><a href="#author-menu" class="nav-link" data-toggle="tab">Author Menu</a></li>
+                        </ul>
+
+                        <div class="tab-pane active" id="main-menu">
+                            <ul class="navbar-list">
+                                <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="#">
+                                        <span>Login OR Register</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
+                                    </a>
+                                    <!-- <ul class="dropdown-list">
+                                        <li><a class="dropdown-link" href="category-list.html">category list</a></li>
+                                        <li><a class="dropdown-link" href="category-details.html">category details</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="#">
+                                        <span>Menu Name</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
+                                    </a>
+                                    <!-- <ul class="dropdown-list">
+                                        <li><a class="dropdown-link" href="ad-list-column3.html">ad list column 3</a></li>
+                                        <li><a class="dropdown-link" href="ad-list-column2.html">ad list column 2</a></li>
+                                        <li><a class="dropdown-link" href="ad-list-column1.html">ad list column 1</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="#">
+                                        <span>Post Free Ad</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
+                                    </a>
+                                    <!-- <ul class="dropdown-list">
+                                        <li><a class="dropdown-link" href="ad-details-grid.html">ad details grid</a></li>
+                                        <li><a class="dropdown-link" href="ad-details-left.html">ad details left</a></li>
+                                        <li><a class="dropdown-link" href="ad-details-right.html">ad details right</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="#">
+                                        <span>List Your Business</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
+                                    </a>
+                                    <!-- <ul class="dropdown-list">
+                                        <li><a class="dropdown-link" href="about.html">About Us</a></li>
+                                        <li><a class="dropdown-link" href="compare.html">Ad Compare</a></li>
+                                        <li><a class="dropdown-link" href="cities.html">Ad by Cities</a></li>
+                                        <li><a class="dropdown-link" href="price.html">Pricing Plan</a></li>
+                                        <li><a class="dropdown-link" href="user-form.html">User Form</a></li>
+                                        <li><a class="dropdown-link" href="404.html">404</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="#">
+                                        <span><i style="font-size: 15px;" class="fa-solid fa-bullhorn"></i> Advertise with Us </a></span>
+                                        <!-- <i class="fas fa-plus"></i> -->
+                                    </a>
+                                    <!-- <ul class="dropdown-list">
+                                        <li><a class="dropdown-link" href="blog-list.html">Blog list</a></li>
+                                        <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="contact.html">
+                                        <span> <i style="font-size: 15px;" class="fa-solid fa-message"></i>  Chat with Us </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane" id="author-menu">
+                            <ul class="navbar-list">
+                                <li class="navbar-item"><a class="navbar-link" href="dashboard.html">Dashboard</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="profile.html">Profile</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="ad-post.html">Ad Post</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="my-ads.html">My Ads</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="setting.html">Settings</a></li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="bookmark.html">
+                                        <span>bookmark</span>
+                                        <span>0</span>
+                                    </a>
+                                </li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="message.html">
+                                        <span>Message</span>
+                                        <span>0</span>
+                                    </a>
+                                </li>
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link" href="notification.html">
+                                        <span>Notification</span>
+                                        <span>0</span>
+                                    </a>
+                                </li>
+                                <li class="navbar-item"><a class="navbar-link" href="user-form.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-footer">
+                        <p>All Rights Reserved By <a href="https://www.ndtv.com/">ndtv.com</a></p>
+                        <p>Developed And Maneged By  <a target="_blank" href="https://webtadka.com">webtadka.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </aside> 
+        <!--=====================================
+                    SIDEBAR PART END
+        =======================================-->
+
+
+
+        
+       
+
+
+        <!--=====================================
+                    MOBILE-NAV PART START
+        =======================================-->
+        <nav class="mobile-nav">
+            <div class="container">
+                <div class="mobile-group">
+                    <a href="index.html" class="mobile-widget">
+                        <i class="fas fa-home"></i>
+                        <span>home</span>
+                    </a>
+                    <a href="user-form.html" class="mobile-widget">
+                        <i class="fas fa-user"></i>
+                        <span>join me</span>
+                    </a>
+                    <a href="ad-post.html" class="mobile-widget plus-btn">
+                        <i class="fas fa-plus"></i>
+                        <span>Ad Post</span>
+                    </a>
+                    <a href="notification.html" class="mobile-widget">
+                        <i class="fas fa-bell"></i>
+                        <span>notify</span>
+                        <sup>0</sup>
+                    </a>
+                    <a href="message.html" class="mobile-widget">
+                        <i class="fas fa-envelope"></i>
+                        <span>message</span>
+                        <sup>0</sup>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--=====================================
+                    MOBILE-NAV PART END
+        =======================================-->
+
+        <!--=====================================
+                   HERO  PART START
+        =======================================-->
+        <section class="hero">
+            <div class="container">
+                <div class="mainHero">
+                    <div class="leftText">
+                        <h1> Show your Business across world</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti explicabo corporis non aliquam, perferendis sunt atque dicta modi provident ullam enim recusandae sed, dolorum, exercitationem consequuntur! Sed culpa ad quaerat.</p>
+                        <button>Sign up for free</button>
+                    </div>
+                    <div class="rightImg">
+                        <img src="./images/about/02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=====================================
+                   HERO  PART END
+        =======================================-->
+       
+        
+        <!--=====================================
+                   Trasted  PART START
+        =======================================-->
+        <section class="trasted">
+            <div class="container">
+                <div class="maintransted">
+                    <div class="text">
+                        <h1>
+                            A Trusted Web Development Company
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error obcaecati ex nostrum nemo distinctio nulla, quod ea natus neque eum? Nobis a illum, facere officiis fugiat iusto nesciunt earum!</p>
+                    </div>
+                    <div class="benefits">
+                        <div class="singleBenefit">
+                            <div class="img">
+                                <img src="./images/blog-suggest/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h4> 25+ Years Of Experience</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </div>
+                        <div class="singleBenefit">
+                            <div class="img">
+                                <img src="./images/blog-suggest/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h4> 25+ Years Of Experience</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </div>
+                        <div class="singleBenefit">
+                            <div class="img">
+                                <img src="./images/blog-suggest/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h4> 25+ Years Of Experience</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </div>
+                        <div class="singleBenefit">
+                            <div class="img">
+                                <img src="./images/blog-suggest/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h4> 25+ Years Of Experience</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </div>
+                        <div class="singleBenefit">
+                            <div class="img">
+                                <img src="./images/blog-suggest/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h4> 25+ Years Of Experience</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=====================================
+                   Transted  PART END1
+        =======================================-->
+          <!--=====================================
+                   MEMBERSHIP  PART START
+        =======================================-->
+        <section class="membership">
+            <div class="container">
+                <div class="mainMembership">
+                    <div class="text">
+                        <h1>Membership Plans</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea quis aspernatur totam porro ratione ut fugiat non dolorem numquam? Nam qui facere sapiente? Atque fuga quas sunt similique magnam?</p>
+                    </div>
+                    <div class="allPlans">
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/04.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae </p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae </p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/01.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae !</p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae !</p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/02.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae</p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/04.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae </p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae !</p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                        <div class="singlePlan">
+                            <h2> Membership Plan</h2>
+                            <div class="img">
+                                <img src="images/cities/01.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <h3> This Is Title</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet soluta aspernatur consequatur excepturi,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae </p>
+
+                            </div>
+                            <div class="planBenefits">
+                                <ul>
+                                    <li> No Recurring / Monthly Payments</li>
+                                    <li>  Custom Design</li>
+                                    <li>   Various Payment Options</li>
+                                    <li> Bug Fix Warranty</li>
+                                </ul>
+                            </div>
+                            <div class="Btn">
+                                <button> Know More</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!--=====================================
+                   MEMBERSHIP  PART END
+        =======================================-->
+        <!--=====================================
+                   MARCHANT  PART START
+        =======================================-->
+        <section class="marchant">
+            <div class="container">
+                <div class="mainMarchant">
+                    <h1> How Marchant Center Works</h1>
+                    <div class="allMarchants">
+                        <div class="singleMarchants">
+                            <h1>1</h1>
+                            <p class="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis corporis ducimus mollitia minus libero molestiae doloremque nulla.  </p>
+                        </div>
+                        <div class="singleMarchants">
+                            <h1>2</h1>
+                            <p class="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis corporis ducimus mollitia minus libero molestiae doloremque nulla.  </p>
+                        </div>
+                        <div class="singleMarchants">
+                            <h1>3</h1>
+                            <p class="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis corporis ducimus mollitia minus libero molestiae doloremque nulla.  </p>
+                        </div>
+                        <div class="singleMarchants">
+                            <h1>4</h1>
+                            <p class="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis corporis ducimus mollitia minus libero molestiae doloremque nulla.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=====================================
+                    MARCHANT  PART END
+        =======================================-->
+         <!--=====================================
+                   INTERESTED  PART START
+        =======================================-->
+        <section class="interested">
+            
+        </section>
+        <!--=====================================
+                   INTERESTED  PART END
+        =======================================-->
+
+        <!--=====================================
+                    FOOTER PART PART
+        =======================================-->
+        <footer class="footer-part">
+            <div class="container">
+
+                <div class="footerTop">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="footer-SocialLinks">
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa-brands fa-linkedin-in"></i></i></a>
+                        <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content">
+                            <h3> About </h3>
+                            <ul class="footer-widget">
+                                <li>
+                                    <!-- <i class="fas fa-map-marker-alt"></i> -->
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <!-- <i class="fas fa-envelope"></i> -->
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <!-- <i class="fas fa-phone-alt"></i> -->
+                                    <a href="testimonial.html">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="career.html">Career With Us</a>
+                                </li>
+                                <li>
+                                    <a href="parthner.html">Join as a Partner</a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Brand Info</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content">
+                            <h3>Our Policies</h3>
+                            <ul class="footer-widget">
+                                <li><a href="terms.html">Terms & Conditions</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="Notices.html">Summons/Notices</a></li>
+                                <li><a href="InfringementPolicy.html">Infringement Policy</a></li>
+                                <li><a href="desclaimer.html">Disclaimer</a></li>
+                                <li><a href="ListingPolicy.html">Listing Policy</a></li>
+                                <li><a href="Guidelines.html">Community Guidelines</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content">
+                            <h3>Business Solutions</h3>
+                            <ul class="footer-widget">
+                                <li><a href="#">Buy Trade Leads</a></li>
+                                <li><a href="#">Buy Trade Alerts</a></li>
+                                <li><a href="#">Advertise with Us</a></li>
+                                <li><a href="#">Premium Ads</a></li>
+                                <li><a href="#">Sponsored Post</a></li>
+                                <li><a href="#">Buy Badges</a></li>
+                                <li><a href="#">Digital Solutions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-content">
+                            <h3> Visit Our Partners</h3>
+                            <ul class="footer-widget">
+                                <li><a href="#">eduted.com </a></li>
+                                <li><a href="#">webtadka.com </a></li>
+                                <li><a href="#">jobearly.com </a></li>
+                                <li><a href="#">finsukh.com </a></li>
+                                <li><a href="#">niveshkaro.com </a></li>
+                                <li><a href="#">sundarsasta.com </a></li>
+                                <li><a href="#">newspart.com </a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-card-content">
+                            <div class="mainSocialConatiner">
+                                <h4> Follow Us On:</h4>
+                                <div class="footer-SocialLinks">
+                                    <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                                    <a href="#"> <i class="fa-brands fa-linkedin-in"></i></i></a>
+                                    <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="businessTime">
+                                <h4> Customer Care</h4>
+                                <p> Monday to Saturday : 9AM to 9PM</p>
+                                <h5>Support : 8189985555</h5>
+                            </div>
+
+                            <div class="footer-payment">
+                                <a href="#"><img src="images/pay-card/01.jpg" alt="01"></a>
+                                <a href="#"><img src="images/pay-card/02.jpg" alt="02"></a>
+                                <a href="#"><img src="images/pay-card/03.jpg" alt="03"></a>
+                                <a href="#"><img src="images/pay-card/04.jpg" alt="04"></a>
+                            </div>
+                            <!-- <div class="footer-option">
+                                <button type="button" data-toggle="modal" data-target="#language"><i class="fas fa-globe"></i>English</button>
+                                <button type="button" data-toggle="modal" data-target="#currency"><i class="fas fa-dollar-sign"></i>USD</button>
+                            </div>
+                            <div class="footer-app">
+                                <a href="#"><img src="images/play-store.png" alt="play-store"></a>
+                                <a href="#"><img src="images/app-store.png" alt="app-store"></a>
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer-desclaimer">
+                    <p> <span>  Disclaimer: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis blanditiis, fugit nemo dolorem similique quisquam magni maiores. Facilis mollitia quod atque quae ullam voluptate autem qui laboriosam, quisquam nemo!</p>
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="container">
+                    <div class="footer-end-content">
+                        <p>Copyright © 2023  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--=====================================
+                    FOOTER PART END
+        =======================================-->
+
+
+        <!--=====================================
+                  CURRENCY MODAL PART START
+        =======================================-->
+        <div class="modal fade" id="currency">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Choose a Currency</h4>
+                        <button class="fas fa-times" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <button class="modal-link active">United States Doller (USD) - $</button>
+                        <button class="modal-link">Euro (EUR) - €</button>
+                        <button class="modal-link">British Pound (GBP) - £</button>
+                        <button class="modal-link">Australian Dollar (AUD) - A$</button>
+                        <button class="modal-link">Canadian Dollar (CAD) - C$</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=====================================
+                  CURRENCY MODAL PART END
+        =======================================-->
+
+
+        <!--=====================================
+                  LANGUAGE MODAL PART END
+        =======================================-->
+        <div class="modal fade" id="language">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Choose a Language</h4>
+                        <button class="fas fa-times" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <button class="modal-link active">English</button>
+                        <button class="modal-link">bangali</button>
+                        <button class="modal-link">arabic</button>
+                        <button class="modal-link">germany</button>
+                        <button class="modal-link">spanish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=====================================
+                   LANGUAGE MODAL PART END
+        =======================================-->
+
+        
+        <!--=====================================
+                    JS LINK PART START
+        =======================================-->
+        <!-- VENDOR -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/vendor/popper.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+
+        <!-- Fontawesome Link -->
+        <script src="https://kit.fontawesome.com/6a16c2d34c.js" crossorigin="anonymous"></script>
+
+        <!-- CUSTOM -->
+        <script src="js/custom/slick.js"></script>
+        
+        <script src="js/custom/main.js"></script>
+       <!--=====================================
+                    JS LINK PART END
+        =======================================-->
+    </body>
+</html?>
+
+
+
+
+
+
