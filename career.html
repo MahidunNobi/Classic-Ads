@@ -595,6 +595,13 @@
         <script src="https://kit.fontawesome.com/6a16c2d34c.js" crossorigin="anonymous"></script>
         <!-- CUSTOM -->
         <script src="js/custom/main.js"></script>
+
+        <script>
+            const ViewOpeningsBtn = document.querySelector(".textInput button")
+            ViewOpeningsBtn.addEventListener("click",()=>{
+               window.innerWidth>= 991 ? window.scrollBy(0, 600): window.scrollBy(0, 2000)
+            })
+        </script>
         <!--=====================================
                     JS LINK PART END
         =======================================-->

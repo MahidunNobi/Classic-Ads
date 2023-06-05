@@ -601,6 +601,13 @@ textarea.form-control {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+ 
+  }
+  .user-form-category-btn .nav{
+    justify-content: space-between;
+  }
+  .user-form-category-btn .nav li{
+    width: 50%;
   }
 .nav.dragging{
   scroll-behavior: auto;

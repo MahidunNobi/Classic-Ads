@@ -34,3 +34,22 @@ allBtns.forEach((e,i) => {
        window.innerWidth >= 991 ? DextopFormsOpen(i) : MobileFormsOpen(i);;
     })
 })
+
+
+// Hero Btn Funtionality
+
+function dextopClick(){
+    window.scrollBy(0, 1600)
+    clearAllForms()
+    formDivs[1].classList.add("active")
+}
+function mobileClick(){
+    window.scrollBy(0, 2200)
+    clearAllForms()
+    formDivs[0].classList.add("active")
+}
+
+const heroHtn = document.querySelector(".HeroBtn")
+heroHtn.addEventListener("click", ()=>{
+    window.innerWidth >= 991 ? dextopClick(): mobileClick()
+})

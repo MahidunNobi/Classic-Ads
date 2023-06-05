@@ -255,7 +255,7 @@ img{
     color: white;
     border: none;
 }
-.mainInterested .btn button{
+.mainInterested .btn a{
     border: 2px solid white;
     color: white;
     padding: 10px 30px;
