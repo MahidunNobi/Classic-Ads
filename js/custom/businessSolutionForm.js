@@ -5,6 +5,8 @@ const allBtns = document.querySelectorAll(".mainMembership .allPlans .singlePlan
 const allForms = document.querySelectorAll(".mainMembership .allPlans .form")
 const formDivs = document.querySelectorAll(".form")
 const submitBtns = document.querySelectorAll(".mainMembership .allPlans .form .Btn button")
+const closeFormsBtn = document.querySelectorAll(".closeFormDiv button")
+
 
 
 submitBtns.forEach((e,i) => {
@@ -35,6 +37,11 @@ allBtns.forEach((e,i) => {
     })
 })
 
+closeFormsBtn.forEach(e=>{
+    e.addEventListener("click", ()=>{
+        clearAllForms()
+    })
+})
 
 // Hero Btn Funtionality
 

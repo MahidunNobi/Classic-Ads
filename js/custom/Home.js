@@ -295,13 +295,24 @@ tastimonialRightArrow.addEventListener("click", ()=>{
 // Find Service Form
 
 const findServiceBtn = document.querySelector(".ServiceEnquiryForm")
+const findServiceCloseBtn = document.querySelector(".closeFormDiv button")
 const Form = document.querySelector(".form ")
+
+findServiceCloseBtn.addEventListener("click", ()=>{
+  Form.classList.remove("active")
+})
 
 findServiceBtn.addEventListener("click", ()=>{
   Form.classList.add("active")
 })
 const OurServicesBtns = document.querySelectorAll(".ServicesContainer .allSections .singleSec button")
+const OurServicesCloseFormBtn = document.querySelector(".closeFormDiv.ServiceCloseFormDiv")
+
 const OurServicesForm = document.querySelector(".mainToolsRaper .form ")
+
+OurServicesCloseFormBtn.addEventListener("click", ()=>{
+  OurServicesForm.classList.remove("active")
+})
 
 OurServicesBtns.forEach(e=>{
   e.addEventListener("click", ()=>{

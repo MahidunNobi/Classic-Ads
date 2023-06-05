@@ -5805,3 +5805,8 @@ margin-right: 15px;
 /*========================================
             LAYOUT STYLE END
 =========================================*/
+
+.closeFormDiv{
+  text-align: right;
+  padding: 0 20px;
+}

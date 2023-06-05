@@ -1,5 +1,10 @@
 const Buttons = document.querySelectorAll("button.parthner")
+const CloseBtn = document.querySelector(".closeFormDiv button")
 const form = document.querySelector(".form")
+
+CloseBtn.addEventListener("click", ()=>{
+    form.classList.remove("active")
+})
 
 Buttons.forEach(e=>{
     e.addEventListener("click", ()=>{
