@@ -23,7 +23,9 @@
         =======================================-->
 
         <!-- FOR WEBPAGE TITLE -->
-        <title>Blog List - Classicads</title>
+        <title>Home - Classicads</title>
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!--=====================================
                     CSS LINK PART START
@@ -36,16 +38,19 @@
         <link rel="stylesheet" href="fonts/font-awesome/fontawesome.css">
 
         <!-- VENDOR -->
+        <link rel="stylesheet" href="css/vendor/slick.min.css">
         <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 
         <!-- CUSTOM -->
         <link rel="stylesheet" href="css/custom/main.css">
-        <link rel="stylesheet" href="css/custom/parthner.css">
+        <link rel="stylesheet" href="css/custom/index.css">
+        <link rel="stylesheet" href="css/custom/chatWithUsForm.css">
         <!--=====================================
                     CSS LINK PART END
         =======================================-->
     </head>
     <body>
+
         <!--=====================================
                     HEADER PART START
         =======================================-->
@@ -88,7 +93,9 @@
                         <li><a href="#"> Post Free Ad</a></li>
                         <li><a href=""> List Your Business</a></li>
                         <li><a href=""> <i class="fa-solid fa-bullhorn"></i> Advertise with Us </a></li>
-                        <li> <a href=""> <i class="fa-solid fa-message"></i>  Chat with Us</a></li>
+                        <li style="position: relative;"> <a href=""> <i class="fa-solid fa-message"></i>  Chat with Us</a>
+
+                        </li>
                     </ul>
                    <a href="ad-post.html" class="btn btn-inline post-btn">
                     <i class="fas fa-plus-circle"></i>
@@ -96,20 +103,19 @@
                 </a>
                    </div>
                    
+                   
 
                    <!-- <div id="MenuBar"> <button onclick="showMobileMenu()">  <i class="fa-solid fa-bars"></i> </button>  </div> -->
                 </div>
             </div>
-        
+          
 
             </div>
         </header>
         <!--=====================================
                     HEADER PART END
         =======================================-->
-
-
-        <!--=====================================
+         <!--=====================================
                     SIDEBAR PART START
         =======================================-->
         <aside class="sidebar-part">
@@ -128,7 +134,7 @@
                         </a>
                     </div>
                     <div class="sidebar-menu">
-                        <ul class="nav nav-tabs">
+                        <ul class="nav nav-tabs navigationTabs">
                             <li><a href="#main-menu" class="nav-link active" data-toggle="tab">Main Menu</a></li>
                             <li><a href="#author-menu" class="nav-link" data-toggle="tab">Author Menu</a></li>
                         </ul>
@@ -138,61 +144,65 @@
                                 <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
                                 <li class="navbar-item navbar-dropdown">
                                     <a class="navbar-link" href="#">
-                                        <span>Categories</span>
-                                        <i class="fas fa-plus"></i>
+                                        <span>Login OR Register</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
                                     </a>
-                                    <ul class="dropdown-list">
+                                    <!-- <ul class="dropdown-list">
                                         <li><a class="dropdown-link" href="category-list.html">category list</a></li>
                                         <li><a class="dropdown-link" href="category-details.html">category details</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="navbar-item navbar-dropdown">
                                     <a class="navbar-link" href="#">
-                                        <span>Advertise List</span>
-                                        <i class="fas fa-plus"></i>
+                                        <span>Menu Name</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
                                     </a>
-                                    <ul class="dropdown-list">
+                                    <!-- <ul class="dropdown-list">
                                         <li><a class="dropdown-link" href="ad-list-column3.html">ad list column 3</a></li>
                                         <li><a class="dropdown-link" href="ad-list-column2.html">ad list column 2</a></li>
                                         <li><a class="dropdown-link" href="ad-list-column1.html">ad list column 1</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="navbar-item navbar-dropdown">
                                     <a class="navbar-link" href="#">
-                                        <span>Advertise details</span>
-                                        <i class="fas fa-plus"></i>
+                                        <span>Post Free Ad</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
                                     </a>
-                                    <ul class="dropdown-list">
+                                    <!-- <ul class="dropdown-list">
                                         <li><a class="dropdown-link" href="ad-details-grid.html">ad details grid</a></li>
                                         <li><a class="dropdown-link" href="ad-details-left.html">ad details left</a></li>
                                         <li><a class="dropdown-link" href="ad-details-right.html">ad details right</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="navbar-item navbar-dropdown">
                                     <a class="navbar-link" href="#">
-                                        <span>Pages</span>
-                                        <i class="fas fa-plus"></i>
+                                        <span>List Your Business</span>
+                                        <!-- <i class="fas fa-plus"></i> -->
                                     </a>
-                                    <ul class="dropdown-list">
+                                    <!-- <ul class="dropdown-list">
                                         <li><a class="dropdown-link" href="about.html">About Us</a></li>
                                         <li><a class="dropdown-link" href="compare.html">Ad Compare</a></li>
                                         <li><a class="dropdown-link" href="cities.html">Ad by Cities</a></li>
                                         <li><a class="dropdown-link" href="price.html">Pricing Plan</a></li>
                                         <li><a class="dropdown-link" href="user-form.html">User Form</a></li>
                                         <li><a class="dropdown-link" href="404.html">404</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="navbar-item navbar-dropdown">
                                     <a class="navbar-link" href="#">
-                                        <span>blogs</span>
-                                        <i class="fas fa-plus"></i>
+                                        <span><i style="font-size: 15px;" class="fa-solid fa-bullhorn"></i> Advertise with Us </a></span>
+                                        <!-- <i class="fas fa-plus"></i> -->
                                     </a>
-                                    <ul class="dropdown-list">
+                                    <!-- <ul class="dropdown-list">
                                         <li><a class="dropdown-link" href="blog-list.html">Blog list</a></li>
                                         <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="contact.html">
+                                        <span> <i style="font-size: 15px;" class="fa-solid fa-message"></i>  Chat with Us </span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
@@ -227,8 +237,8 @@
                     </div>
 
                     <div class="sidebar-footer">
-                        <p>All Rights Reserved By <a href="#">Classicads</a></p>
-                        <p>Developed By <a href="https://themeforest.net/user/mironcoder">Mironcoder</a></p>
+                        <p>All Rights Reserved By <a href="https://www.ndtv.com/">ndtv.com</a></p>
+                        <p>Developed And Maneged By  <a target="_blank" href="https://webtadka.com">webtadka.com</a></p>
                     </div>
                 </div>
             </div>
@@ -236,6 +246,8 @@
         <!--=====================================
                     SIDEBAR PART END
         =======================================-->
+
+       
 
 
         <!--=====================================
@@ -273,129 +285,40 @@
                     MOBILE-NAV PART END
         =======================================-->
 
-
-        <!--=====================================
-                  Hero PART START
+          <!--=====================================
+                    FORM PARTSTART
         =======================================-->
-       <section class="parthnerHero">
-        <div class="container">
-            <div class="mainHero">
-                <div class="texts">
-                    <h1> Cloudways Partner Program </h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam iusto perferendis ad reprehenderit exercitationem adipisci ipsam animi, aspernatur aliquid repellendus, sunt autem dolorum a dolores, atque eaque repellat natus!</p>
-                    <button class="parthner">Click To Connect</button>
-                </div>
-                <div class="image">
-                    <img src="https://www.cloudways.com/wp-content/uploads/2018/05/partners-bnr-img.png" alt="">
-                </div>
-            </div>
-        </div>
-       </section>
-        <!--=====================================
-                  Hero PART END
-        =======================================-->
-        <!--=====================================
-                    PARTNERSHIP PART START
-        =======================================-->
-
-        <section class="partnership">
+        <section class="Form">
             <div class="container">
-                <div class="mainPartnership">
-                    <h2>
-                        Partnership Programe
-                    </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <div class="mainForm">
+                    <h1 style="text-align: center;">Fill This Form To Chat</h1>
+                    <div class="form active">
 
-                    <div class="allPrograms">
-                        <div class="singlePrograme">
-                            <div class="icon">
-                                <i class="fa-solid fa-handshake"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Channel Partner </h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint itaque architecto excepturi nihil, maxime sit alias illum quo dolor laudantium. Explicabo mollit</p>
-                            </div>
-                            <div class="button"> 
-                                <button class="knowMore parthner">Know More</button><i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                      
-                        <div class="singlePrograme">
-                            <div class="icon">
-                                <i class="fa-solid fa-handshake"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Agency  </h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint itaque architecto excepturi nihil, maxime sit alias illum quo dolor laudantium. Explicabo mollit</p>
-                            </div>
-                            <div class="button"> 
-                                <button class="knowMore parthner">Know More</button><i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                        
-                        <div class="singlePrograme">
-                            <div class="icon">
-                                <i class="fa-solid fa-handshake"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Freelancer  </h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint itaque architecto excepturi nihil, maxime sit alias illum quo dolor laudantium. Explicabo mollit</p>
-                            </div>
-                            <div class="button"> 
-                                <button class="knowMore parthner">Know More</button><i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form">
                         <form action="">
                         <div class="inputRows"> 
                             <div class="inputRow">
                                 <label for="name">Name:</label>
                                 <input type="text" name="name" placeholder="Enter Full Name" id="name">
-
+            
                                 <label for="contactNum">
                                     Contact Number:
                                 </label>
                                 <input type="text" id="contactNum" name="contactNum" placeholder="Enter Number">
-
-                                <label for="Email">
-                                    Email:
-                                </label>
-                                <input type="text" id="Email" name="Email" placeholder="Enter E-mail">
-
+            
+                                
+            
                             </div>
                             <div class="inputRow">
                                 <label for="city">City:</label>
                                 <input type="text" id="city" name="city" placeholder="Enter City">
-
-                                <label for="CompanyName">
-                                    Company Name(If any):
+                                <label for="Email">
+                                    Email:
                                 </label>
-                                <input type="text" id="CompanyName" name="CompanyName" placeholder="Enter Company Name(i If any)">
-
-                                <label for="website">
-                                    Website(if any):
-                                </label>
-                                <input type="text" id="website" name="website" placeholder="Enter Website(if any)">
-
-                            </div>
-                            <div class="inputRow">
-                                <label for="address">Address:</label>
-                                <input type="text" id="address" name="address" placeholder="Enter Address">
-
-                                <label for="selectCategory">
-                                Select Partnership :
-                                </label>
-                                <select name="selectCategory" id="selectCategory">
-                                    <option value="none">none</option>
-                                    <option value="B">Channel Partner</option>
-                                    <option value="C"> Agency </option>
-                                    <option value="D">Freelancer </option>
-                                </select>
-
+                                <input type="text" id="Email" name="Email" placeholder="Enter E-mail">
                                
-
+            
                             </div>
+                            
                         </div>
                         <div class="message">
                             <textarea name="Message" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
@@ -410,43 +333,15 @@
                 </div>
             </div>
         </section>
-         <!--=====================================
-                    PARTNERSHIP PART END
-        =======================================-->
+       
 
-          <!--=====================================
-                    GET IN TOUCH PART START
-        =======================================-->
-            <section class="getInTouch">
-                <div class="container">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                   </p>
-                   <button class="parthner">
-                    Get In Touch
-                   </button>                        
-                </div>
-            </section>
-        <!--=====================================
-                    GET IN TOUCH PART END
-        =======================================-->
-        <!--=====================================
-                   Edge PART START
-        =======================================-->  
-        <section class="edge">
-            <div class="container">
-                <div class="mainEdge">
-                    <h1> Give Your Business the
-                        Cloudways Edge</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="parthner">
-                            Get Started
-                        </button>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                   Edge PART END
-        =======================================-->  
+
+       
+
+   
+         
+
+
         <!--=====================================
                     FOOTER PART PART
         =======================================-->
@@ -480,7 +375,7 @@
                                 </li>
                                 <li>
                                     <!-- <i class="fas fa-phone-alt"></i> -->
-                                    <a href="#">Testimonials</a>
+                                    <a href="testimonial.html">Testimonials</a>
                                 </li>
                                 <li>
                                     <a href="career.html">Career With Us</a>
@@ -492,7 +387,7 @@
                                     <a href="blog-list.html">Brand Info</a>
                                 </li>
                                 <li>
-                                    <a href="#">FAQ</a>
+                                    <a href="faq.html">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -501,13 +396,13 @@
                         <div class="footer-content">
                             <h3>Our Policies</h3>
                             <ul class="footer-widget">
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Summons/Notices</a></li>
-                                <li><a href="#">Infringement Policy</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Listing Policy</a></li>
-                                <li><a href="#">Community Guidelines</a></li>
+                                <li><a href="terms.html">Terms & Conditions</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="Notices.html">Summons/Notices</a></li>
+                                <li><a href="InfringementPolicy.html">Infringement Policy</a></li>
+                                <li><a href="desclaimer.html">Disclaimer</a></li>
+                                <li><a href="ListingPolicy.html">Listing Policy</a></li>
+                                <li><a href="Guidelines.html">Community Guidelines</a></li>
                             </ul>
                         </div>
                     </div>
@@ -515,13 +410,13 @@
                         <div class="footer-content">
                             <h3>Business Solutions</h3>
                             <ul class="footer-widget">
-                                <li><a href="#">Buy Trade Leads</a></li>
-                                <li><a href="#">Buy Trade Alerts</a></li>
-                                <li><a href="#">Advertise with Us</a></li>
-                                <li><a href="#">Premium Ads</a></li>
-                                <li><a href="#">Sponsored Post</a></li>
-                                <li><a href="#">Buy Badges</a></li>
-                                <li><a href="#">Digital Solutions</a></li>
+                                <li><a href="businessSolution.html">Buy Trade Leads</a></li>
+                                <li><a href="businessSolution.html">Buy Trade Alerts</a></li>
+                                <li><a href="businessSolution.html">Advertise with Us</a></li>
+                                <li><a href="businessSolution.html">Premium Ads</a></li>
+                                <li><a href="businessSolution.html">Sponsored Post</a></li>
+                                <li><a href="businessSolution.html">Buy Badges</a></li>
+                                <li><a href="businessSolution.html">Digital Solutions</a></li>
                             </ul>
                         </div>
                     </div>
@@ -651,22 +546,21 @@
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
         <script src="js/vendor/popper.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-             <!-- Fontawesome Link -->
+        <script src="js/vendor/slick.min.js"></script>
+
+        <!-- Fontawesome Link -->
         <script src="https://kit.fontawesome.com/6a16c2d34c.js" crossorigin="anonymous"></script>
+
         <!-- CUSTOM -->
+        <script src="js/custom/slick.js"></script>
+       
         <script src="js/custom/main.js"></script>
-        <script src="js/custom/parthner.js"></script>
+        
         <!--=====================================
                     JS LINK PART END
         =======================================-->
     </body>
-</html>
-
-
-
-
-
-
+</html?>
 
 
 

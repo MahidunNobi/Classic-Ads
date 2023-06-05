@@ -46,13 +46,13 @@ section.hero {
     justify-content: space-evenly;
 }
 .benefits .singleBenefit{
-    width: 30%;
+    width: 33%;
     display: flex;
     gap: 15px;
     border: 1px solid #e6e6e6;
     padding: 10px;
     align-items: center;
-    margin: 10px 0;
+    margin: 2px 0;
 }
 .benefits .singleBenefit .img{
     width: 120px;
@@ -62,7 +62,10 @@ img{
 }
 .benefits .singleBenefit .description p{
    
+    
     line-height: 1.3;
+    font-size: 14px;
+    margin-top: 7px;
 }
 .membership{
     padding: 0 0 60px;
@@ -86,6 +89,7 @@ img{
     border: 2px solid #0044bb;
     border-radius: 10px;
     margin: 10px 0;
+    padding: 20px;
 }
 .mainMembership .allPlans .singlePlan h2{
     font-size: 30px;
@@ -99,9 +103,7 @@ img{
     align-items: center;
     margin: 20px 0;
 }
-.mainMembership .allPlans .singlePlan .description{
-    padding: 0 10px;
-}
+
 .mainMembership .allPlans .singlePlan .description p{
  margin: 10px 0 20px;
 }
@@ -118,7 +120,7 @@ img{
     border: 1px solid #0044bb;
     padding: 10px 30px;
     border-radius: 5px;
-    width: 90%;
+    width: 100%;
     transition: all 0.3s;
     font-weight: 600;
     background: #0044bb;
@@ -127,6 +129,81 @@ img{
 .mainMembership .allPlans .singlePlan .Btn button:hover{
     color: #0044bb;
     background-color: transparent;
+}
+.mainMembership .allPlans .form{
+    width: 94%;
+    padding: 20px;
+    border: 2px solid #0044bb;
+    border-radius: 10px;
+    display: none;
+    margin: 20px 0;
+}
+.mainMembership .allPlans .form.active{
+    display: block;
+}
+.mainMembership .allPlans .form .inputRows{
+    display: flex;
+    justify-content: space-between;
+}
+.mainMembership .allPlans .form .inputRows .inputRow{
+    width: 30%;
+  
+}
+.mainMembership .allPlans .form .inputRows .inputRow input{
+    width: 100%;
+    border: 2px solid #ddd;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px 0; 
+}
+
+.mainMembership .allPlans .form .inputRows .inputRow select{
+    width: 100%;
+    border: 2px solid #ddd;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px 0; 
+}
+.mainMembership .allPlans .form .message textarea{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.mainMembership .allPlans .form .termsConditions{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.mainMembership .allPlans .form .Btn{
+    text-align: center;
+}
+.mainMembership .allPlans .form .Btn button{
+    border: 2px solid #0044bb;
+    color: #0044bb;
+    padding: 10px 30px ;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.mainMembership .allPlans .form .Btn button:hover{
+    background:  #0044bb;
+    color:  white;
+}
+@media (max-width:991px) {
+    .mainMembership .allPlans .form .inputRows{
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainMembership .allPlans .form .inputRows .inputRow{
+        width: 100%;
+      
+    }
 }
 .marchant{
     margin: 30px 0;
@@ -165,10 +242,9 @@ img{
     color: white;
 }
 .mainInterested {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    align-items: center;
+   text-align: center;
+    padding: 50px 0;
+
 }
 .mainInterested .text h2{
     font-size:  30px;

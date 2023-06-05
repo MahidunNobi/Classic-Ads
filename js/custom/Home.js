@@ -292,3 +292,19 @@ tastimonialLeftArrow.addEventListener("click", ()=>{
 tastimonialRightArrow.addEventListener("click", ()=>{
   tastimonialUl.scrollLeft += 400
 })
+// Find Service Form
+
+const findServiceBtn = document.querySelector(".ServiceEnquiryForm")
+const Form = document.querySelector(".form ")
+
+findServiceBtn.addEventListener("click", ()=>{
+  Form.classList.add("active")
+})
+const OurServicesBtns = document.querySelectorAll(".ServicesContainer .allSections .singleSec button")
+const OurServicesForm = document.querySelector(".mainToolsRaper .form ")
+
+OurServicesBtns.forEach(e=>{
+  e.addEventListener("click", ()=>{
+    OurServicesForm.classList.add("active")
+  })
+})
