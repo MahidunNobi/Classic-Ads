@@ -165,7 +165,7 @@
 }
 .subBlogs .singleBlogCard .img{
   height: 120px;
-
+  width: 130px;
   border-radius: 10px;
   overflow: hidden;
   margin-right: 15px;

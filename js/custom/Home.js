@@ -304,6 +304,7 @@ findServiceCloseBtn.addEventListener("click", ()=>{
 
 findServiceBtn.addEventListener("click", ()=>{
   Form.classList.add("active")
+  window.innerWidth <= 911 && window.scrollBy(0, 600)
 })
 const OurServicesBtns = document.querySelectorAll(".ServicesContainer .allSections .singleSec button")
 const OurServicesCloseFormBtn = document.querySelector(".closeFormDiv.ServiceCloseFormDiv")
@@ -319,3 +320,45 @@ OurServicesBtns.forEach(e=>{
     OurServicesForm.classList.add("active")
   })
 })
+const FindServiceRightSecBtn = document.querySelector(".section2 button")
+const FindServiceRightSecCloseBtn = document.querySelector(".form.rightSection .closeFormDiv.ServiceCloseFormDiv button")
+const FindServiceRightSecBtnForm = document.querySelector(".form.rightSection")
+
+FindServiceRightSecCloseBtn.addEventListener("click",() =>{
+  FindServiceRightSecBtnForm.classList.remove("active")
+})
+
+FindServiceRightSecBtn.addEventListener("click", ()=>{
+  FindServiceRightSecBtnForm.classList.add("active")
+})
+
+
+// Thank you Close Btn....
+const ThankUCloseBtnHome = document.querySelectorAll(".mainThankU .closeBtn button")
+const allForms = document.querySelectorAll(".form")
+
+const FormSubmitBtn = document.querySelectorAll(".form .Btn button")
+const ThankYouMessageBox = document.querySelectorAll(".ThankU")
+
+
+FormSubmitBtn.forEach((e, i)=>{
+  e.addEventListener("click", ()=>{
+    ThankYouMessageBox[i].classList.add("active")
+    window.innerWidth <=991 && window.scrollBy(0, -300)
+    
+})
+
+})
+
+
+ThankUCloseBtnHome.forEach((e, i)=>{
+  e.addEventListener("click", ()=>{
+    allForms.forEach(e=>{
+      e.classList.remove("active")
+    })
+    ThankYouMessageBox[i].classList.remove("active")
+  })
+})
+
+
+

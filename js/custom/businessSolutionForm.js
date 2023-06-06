@@ -4,16 +4,16 @@
 const allBtns = document.querySelectorAll(".mainMembership .allPlans .singlePlan .Btn button")
 const allForms = document.querySelectorAll(".mainMembership .allPlans .form")
 const formDivs = document.querySelectorAll(".form")
-const submitBtns = document.querySelectorAll(".mainMembership .allPlans .form .Btn button")
+// const submitBtns = document.querySelectorAll(".mainMembership .allPlans .form .Btn button")
 const closeFormsBtn = document.querySelectorAll(".closeFormDiv button")
 
 
 
-submitBtns.forEach((e,i) => {
-    e.addEventListener("click", ()=>{
-        formDivs[i].innerHTML="<p style='text-align:center;'> We have received your message and appreciate your time and effort in contacting us. Our team will carefully review your submission and get back to you as soon as possible. </p>"
-    })
-})
+// submitBtns.forEach((e,i) => {
+//     e.addEventListener("click", ()=>{
+//         formDivs[i].innerHTML="<p style='text-align:center;'> We have received your message and appreciate your time and effort in contacting us. Our team will carefully review your submission and get back to you as soon as possible. </p>"
+//     })
+// })
 
 function clearAllForms(){
     allForms.forEach(e=>{
@@ -59,4 +59,39 @@ function mobileClick(){
 const heroHtn = document.querySelector(".HeroBtn")
 heroHtn.addEventListener("click", ()=>{
     window.innerWidth >= 991 ? dextopClick(): mobileClick()
+})
+
+// Thank you Close Btn....
+const ThankUCloseBtnHome = document.querySelectorAll(".mainThankU .closeBtn button")
+const allFormsH = document.querySelectorAll(".form")
+
+const FormSubmitBtn = document.querySelectorAll(".mainMembership .allPlans .form .Btn button")
+const ThankYouMessageBox = document.querySelectorAll(".ThankU")
+
+
+FormSubmitBtn.forEach((e, i)=>{
+  e.addEventListener("click", ()=>{
+    ThankYouMessageBox[i].classList.add("active")
+    window.innerWidth <=991 && window.scrollBy(0, -400)
+    
+})
+
+})
+
+
+ThankUCloseBtnHome.forEach((e, i)=>{
+  e.addEventListener("click", ()=>{
+    clearAllForms()
+    ThankYouMessageBox[i].classList.remove("active")
+  })
+})
+
+// InterEsted Connect Btn
+
+const ConnectBtn = document.querySelector(".mainInterested .btn button ")
+
+ConnectBtn.addEventListener("click", ()=>{
+    clearAllForms()
+    allForms[allForms.length-1].classList.add("active")
+    window.innerWidth>= 991 ? window.scrollTo(0, 3600): window.scrollTo(0, 7790)
 })

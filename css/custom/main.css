@@ -5801,12 +5801,112 @@ margin-right: 15px;
     width: 120px;
   }
 }
-
+#disclaimerSection div{
+  display: flex;
+  background: #d0dff8;
+  color: black;
+  padding: 0 30px;
+}
 /*========================================
             LAYOUT STYLE END
 =========================================*/
-
+.form .termsConditions{
+  padding: 0 20px;
+}
+.form .message{
+  padding: 20px;
+}
+.form .inputRows{
+  padding: 20px;
+}
 .closeFormDiv{
   text-align: right;
-  padding: 0 20px;
+  padding: 0 10px;
+  background-color: #0044bb;
+  color: white;
+  padding: 10px;
+}
+.closeFormDiv h2{
+  text-align: center;
+  color: white;
+}
+.closeFormDiv button i{
+  border: 2px solid white;
+  padding: 5px 7px;
+  border-radius: 30px;
+  color: white;
+}
+
+/* Thank you Box Design */
+
+.ThankU{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  height: 100%;
+  width: 100%;
+  background-color: #000000ad;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+.ThankU.active{
+  display: flex;
+}
+.mainThankU{
+  width: 400px;
+  background: #0044bb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.mainThankU .closeBtn{
+  text-align: right;
+
+}
+.mainThankU .closeBtn button{
+  color: white;
+  border: 2px solid white;
+  padding: 0 7px;
+  border-radius: 30px;
+}
+.mainThankU .title h4{
+ color: white;
+ text-align: center;
+ font-size: 30px;
+}
+.mainThankU .OkSign i{
+  font-size: 20px;
+  border: 2px solid white;
+  padding:10px;
+  border-radius: 30px;
+  margin: 20px 0;
+}
+.mainThankU .paragraphBtn a{
+  margin: 15px 0;
+  padding: 10px 30px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.mainThankU .paragraphBtn a:hover{
+  background: white;
+  color: #0044bb;
+}
+@media (max-width:991px) {
+  .ThankU{
+    width: 125%;
+    margin-left: -10%;
+  }
+  .mainThankU{
+    width: 300px;
+  }
+  
+}
+
+.relative{
+  position: relative;
 }

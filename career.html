@@ -56,8 +56,8 @@
 
                 <div id="disclaimerSection" class="">
                     <div>
-                        <p>Disclainer:</p>
-                        <marquee behavior="scroll" direction="left"> This is disclaimer</marquee>
+                        <p style="color: red;">Disclaimer:</p>
+                        <marquee behavior="scroll" direction="left"> NDTVINDIA.COM operates independently and have no association or connection with any specific or resemble brand or established company. We are only a classified website. </marquee>
                     </div>
                 </div>
 
@@ -81,14 +81,19 @@
                         <li id="login-Li">
                              <i class="fa-solid fa-user"></i>  
                              <div> 
-                                <a id="login-A" href="#">Login</a> or  <a href="#">Register</a>
+                                <a id="login-A" href="user-form.html">Login or Register</a>
                             </div>
                         </li>
-                        <li><a href="#">Brand Info</a></li>
-                        <li><a href="#"> Post Free Ad</a></li>
-                        <li><a href=""> List Your Business</a></li>
+                        <li><a href="blog-list.html"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width:23px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+                            </svg> Brand Info</a></li>
+                        
+                        <li><a href=""> <i style="margin-right: 5px;" class="fa-solid fa-list"></i> List Your Business</a></li>
                         <li><a href=""> <i class="fa-solid fa-bullhorn"></i> Advertise with Us </a></li>
-                        <li> <a href=""> <i class="fa-solid fa-message"></i>  Chat with Us</a></li>
+                        <li style="position: relative;"> <a href="./chatWithUsForms.html"> <i class="fa-solid fa-message"></i>  Chat with Us</a>
+
+                        </li>
                     </ul>
                    <a href="ad-post.html" class="btn btn-inline post-btn">
                     <i class="fas fa-plus-circle"></i>
@@ -96,11 +101,12 @@
                 </a>
                    </div>
                    
+                   
 
                    <!-- <div id="MenuBar"> <button onclick="showMobileMenu()">  <i class="fa-solid fa-bars"></i> </button>  </div> -->
                 </div>
             </div>
-        
+          
 
             </div>
         </header>
@@ -356,7 +362,7 @@
         =======================================-->
         <section class="resume">
             <div class="container">
-                <div class="mainResume">
+                <div class="mainResume relative">
                     <h2>  Post <span style="color:#0044bb;">  Resume </span></h2>
                     <div class="allInputFields">
                         <div class="inputRow">
@@ -380,13 +386,33 @@
                             Submit Application
                         </button>
                     </div>
+           
                 </div>
             </div>
         </section>
         <!--=====================================
                   RESUME PART END
         =======================================-->
-
+         <!--=====================================
+                    Thank You Message PART START
+            =======================================-->
+            <section class="ThankU">
+                <div class="mainThankU">
+                    <div class="closeBtn">
+                        <button class="closeThankUBtn"> <i class="fa-solid fa-x"></i></button> 
+                    </div>
+                   <div class="title">  
+                        <h4> Thank You</h4>  
+                    </div>
+                    <div class="OkSign">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="paragraphBtn">
+                        <p>We have received your message and appreciate your time and effort in contacting us. Our team will carefully review your submission and get back to you as soon as possible. </p>
+                        <a href="index.html" class="HomePage"> Back To Home</a>
+                    </div>
+                </div>
+            </section>
         <!--=====================================
                     FOOTER PART PART
         =======================================-->
@@ -420,7 +446,7 @@
                                 </li>
                                 <li>
                                     <!-- <i class="fas fa-phone-alt"></i> -->
-                                    <a href="#">Testimonials</a>
+                                    <a href="testimonial.html">Testimonials</a>
                                 </li>
                                 <li>
                                     <a href="career.html">Career With Us</a>
@@ -432,7 +458,7 @@
                                     <a href="blog-list.html">Brand Info</a>
                                 </li>
                                 <li>
-                                    <a href="#">FAQ</a>
+                                    <a href="faq.html">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -441,13 +467,13 @@
                         <div class="footer-content">
                             <h3>Our Policies</h3>
                             <ul class="footer-widget">
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Summons/Notices</a></li>
-                                <li><a href="#">Infringement Policy</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Listing Policy</a></li>
-                                <li><a href="#">Community Guidelines</a></li>
+                                <li><a href="terms.html">Terms & Conditions</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="Notices.html">Summons/Notices</a></li>
+                                <li><a href="InfringementPolicy.html">Infringement Policy</a></li>
+                                <li><a href="desclaimer.html">Disclaimer</a></li>
+                                <li><a href="ListingPolicy.html">Listing Policy</a></li>
+                                <li><a href="Guidelines.html">Community Guidelines</a></li>
                             </ul>
                         </div>
                     </div>
@@ -455,13 +481,13 @@
                         <div class="footer-content">
                             <h3>Business Solutions</h3>
                             <ul class="footer-widget">
-                                <li><a href="#">Buy Trade Leads</a></li>
-                                <li><a href="#">Buy Trade Alerts</a></li>
-                                <li><a href="#">Advertise with Us</a></li>
-                                <li><a href="#">Premium Ads</a></li>
-                                <li><a href="#">Sponsored Post</a></li>
-                                <li><a href="#">Buy Badges</a></li>
-                                <li><a href="#">Digital Solutions</a></li>
+                                <li><a href="businessSolution.html">Advertise with Us</a></li>
+                                <li><a href="businessSolution.html">Build Review</a></li>
+                                <li><a href="businessSolution.html">Sponsored Ads</a></li>
+                                <li><a href="businessSolution.html">Verified Business</a></li>
+                                <li><a href="businessSolution.html">Membership Plan</a></li>
+                                <li><a href="businessSolution.html">Banner Ads</a></li>
+                                <li><a href="businessSolution.html">Sponsored Post</a></li>
                             </ul>
                         </div>
                     </div>
@@ -469,13 +495,13 @@
                         <div class="footer-content">
                             <h3> Visit Our Partners</h3>
                             <ul class="footer-widget">
-                                <li><a href="#">eduted.com </a></li>
-                                <li><a href="#">webtadka.com </a></li>
-                                <li><a href="#">jobearly.com </a></li>
-                                <li><a href="#">finsukh.com </a></li>
-                                <li><a href="#">niveshkaro.com </a></li>
-                                <li><a href="#">sundarsasta.com </a></li>
-                                <li><a href="#">newspart.com </a></li>
+                                <li><a target="_blank" href="https://eduted.com/">eduted.com </a></li>
+                                <li><a target="_blank" href="https://webtadka.com/">webtadka.com </a></li>
+                                <li><a target="_blank" href="https://jobearly.com/">jobearly.com </a></li>
+                                <li><a target="_blank" href="https://finsukh.com/">finsukh.com </a></li>
+                                <li><a target="_blank" href="https://niveshkaro.com/">niveshkaro.com </a></li>
+                                <li><a target="_blank" href="https://sundarsasta.com/">sundarsasta.com </a></li>
+                                <li><a target="_blank" href="https://newspart.com/">newspart.com </a></li>
                               
                             </ul>
                         </div>
@@ -496,7 +522,7 @@
                             <div class="businessTime">
                                 <h4> Customer Care</h4>
                                 <p> Monday to Saturday : 9AM to 9PM</p>
-                                <h5>Support : 8189985555</h5>
+                                <h5>Support : 9967024134</h5>
                             </div>
 
                             <div class="footer-payment">
@@ -518,13 +544,13 @@
                     </div>
                 </div>
                 <div class="footer-desclaimer">
-                    <p> <span>  Disclaimer: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis blanditiis, fugit nemo dolorem similique quisquam magni maiores. Facilis mollitia quod atque quae ullam voluptate autem qui laboriosam, quisquam nemo!</p>
+                    <p> <span>  Disclaimer: </span> NDTVINDIA.COM operates independently and have no association or connection with any specific or resemble brand or established company. The information, products, services, or advertisements displayed on our website are provided by individual users or third-party advertisers, and they are responsible for their own content. We do not endorse or validate the accuracy, reliability, or quality of the products, services, or information provided by these users or advertisers.</p>
                 </div>
             </div>
             <div class="footer-end">
                 <div class="container">
                     <div class="footer-end-content">
-                        <p>Copyright © 2023  All rights reserved.</p>
+                        <p>Copyright © 2023 All rights reserved by <a target="_blank" style="color: rgb(64, 64, 228);" href="http://www.ndtvindia.com/">www.ndtvindia.com</a>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       Website Developed & Managed by <a style="color: rgb(64, 64, 228);" href="https://webtadka.com/" target="_blank"> webtadka.com</a> </p>
                     </div>
                 </div>
             </div>
@@ -597,10 +623,29 @@
         <script src="js/custom/main.js"></script>
 
         <script>
+
             const ViewOpeningsBtn = document.querySelector(".textInput button")
+            const ThankUCloseBtnHome = document.querySelector(".mainThankU .closeBtn button")
+        
+            const ThankYouMessageBox = document.querySelector(".ThankU")
             ViewOpeningsBtn.addEventListener("click",()=>{
                window.innerWidth>= 991 ? window.scrollBy(0, 600): window.scrollBy(0, 2000)
             })
+            const submitBtn = document.querySelector(".submitBtn button")
+            submitBtn.addEventListener("click",()=>{
+                window.scrollTo(0,0)
+                ThankYouMessageBox.classList.add("active")
+            })
+            ThankUCloseBtnHome.addEventListener("click", ()=>{
+                ThankYouMessageBox.classList.remove("active")
+            })
+
+            // Thank you Close Btn....
+            
+
+
+            
+
         </script>
         <!--=====================================
                     JS LINK PART END

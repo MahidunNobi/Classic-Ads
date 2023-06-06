@@ -41,21 +41,43 @@ section.hero {
     margin-bottom: 20px;
 }
 .benefits{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    border: 1px solid #e6e6e6;
 }
+.benefits .firstRow{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+.benefits .firstRow .singleBenefit:nth-child(2){
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+
+}
+.benefits .secondRow{
+    display: flex;
+    justify-content: center;
+}
+.benefits .secondRow .singleBenefit{
+    width: 45%;
+    height: 100px;
+}
+.benefits .secondRow .singleBenefit:nth-child(1){
+    border-right: 1px solid #e6e6e6;
+}
+
 .benefits .singleBenefit{
     width: 33%;
     display: flex;
     gap: 15px;
-    border: 1px solid #e6e6e6;
+    
     padding: 10px;
     align-items: center;
     margin: 2px 0;
 }
 .benefits .singleBenefit .img{
     width: 120px;
+    height: 100%;
+    overflow: hidden;
 }
 img{
     width: 100%;
@@ -132,7 +154,7 @@ img{
 }
 .mainMembership .allPlans .form{
     width: 94%;
-    padding: 20px;
+ 
     border: 2px solid #0044bb;
     border-radius: 10px;
     display: none;
@@ -204,6 +226,7 @@ img{
         width: 100%;
       
     }
+    
 }
 .marchant{
     margin: 30px 0;
@@ -255,7 +278,7 @@ img{
     color: white;
     border: none;
 }
-.mainInterested .btn a{
+.mainInterested .btn button{
     border: 2px solid white;
     color: white;
     padding: 10px 30px;
@@ -268,6 +291,9 @@ img{
     color: #0044bb;
 }
 @media (max-width: 911px) {
+    .mainMembership .allPlans .singlePlan .img {
+        height: 130px ;
+    }
     .mainHero{
         flex-direction: column-reverse;
         justify-content: center;
@@ -295,7 +321,33 @@ img{
     }
     .benefits .singleBenefit{
         width: 100%;
-       
+       border-bottom: 1px solid #e6e6e6;
+    }
+    .benefits .firstRow{
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        
+    }
+    .benefits .firstRow .singleBenefit:nth-child(2){
+        border-right: none;
+        border-left: none;
+    
+    }
+    .benefits .secondRow{
+        flex-direction: column;
+
+        justify-content: center;
+    }
+    .benefits .secondRow .singleBenefit{
+        width: 100%;
+        height: auto;
+    }
+    .benefits .secondRow .singleBenefit:nth-child(1){
+        border-right: none;
+    }
+    .benefits .secondRow .singleBenefit:nth-child(2){
+        border: none;
     }
     .mainMembership .allPlans{
         justify-content: center;

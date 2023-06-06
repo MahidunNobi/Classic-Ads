@@ -61,14 +61,21 @@
     background:  #0044bb;
     color:  white;
   }
-  
+  .mainForm .text{
+    background-color: rgb(85, 85, 236)
+                    ; color: white; padding: 20px 0; width: 75%; 
+                    margin: auto;
+  }
+  .mainForm{
+    margin-bottom: 30px;
+  }
   
   @media (max-width: 991px) {
     h1{
         font-size: 35px;
     }
     .form{
-        width: 95%;
+        width: 100%;
     }
        .form .inputRows{
         flex-direction: column;
@@ -79,4 +86,8 @@
          width: 100%;
        
      }
+     .mainForm .text{
+       width: 100%; 
+        padding: 20px 15px;
+    }
 }  

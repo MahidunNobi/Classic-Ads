@@ -236,12 +236,20 @@ questions.forEach((e, i)=>{
 console.log(window.innerWidth)
 
 
-const FormDiv = document.querySelector(".form")
-const FormSubmitBtn = document.querySelector(".form .Btn button")
-FormSubmitBtn.addEventListener("click", ()=>{
-    FormDiv.innerHTML="<p style='text-align:center'> We have received your message and appreciate your time and effort in contacting us. Our team will carefully review your submission and get back to you as soon as possible. </p>"
-})
 
+// const FormSubmitBtn = document.querySelector(".form .Btn button")
+// const ThankUCloseBtn = document.querySelector(".closeBtn button")
+
+// const ThankYouMessageBox = document.querySelector(".ThankU")
+
+
+// FormSubmitBtn.addEventListener("click", ()=>{
+//     ThankYouMessageBox.classList.add("active")
+// })
+
+// ThankUCloseBtn.addEventListener("click", ()=>{
+//     ThankYouMessageBox.classList.remove("active")
+// })
 
 
 
