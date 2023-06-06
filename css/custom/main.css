@@ -601,7 +601,10 @@ textarea.form-control {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
- 
+  justify-content: space-between;
+  }
+  .nav li{
+    width: 50%;
   }
   .user-form-category-btn .nav{
     justify-content: space-between;
@@ -2397,7 +2400,7 @@ h6.dexCompany {
   border: 1px solid var(--border);
   position: relative;
   z-index: 1;
-  width: 350px;
+  width: 272px;
   transition: all linear .3s;
   -webkit-transition: all linear .3s;
   -moz-transition: all linear .3s;
@@ -2508,7 +2511,7 @@ h6.dexCompany {
 }
 
 .blog-meta li p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 15px;
   color: var(--heading);
   text-transform: capitalize;
