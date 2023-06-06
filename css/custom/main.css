@@ -3840,11 +3840,20 @@ p.openTime {
   justify-content: center;
 }
 
-.AdsContainer .row .singleAd{
+ .singleAd{
   width: 23%;
   margin: 10px;
 }
-.AdsContainer .row .singleAd.textSection{
+.LatestAllBlogs .singleAd.textSection{
+  height: 437px;
+}
+@media (max-width:991px) {
+  .LatestAllBlogs .singleAd.textSection{
+   width: 89%;
+   margin-left: 17px;
+  }
+}
+ .singleAd.textSection{
   background-color: #00acee;
   padding: 20px 15px;
   display: flex;
@@ -3854,18 +3863,18 @@ p.openTime {
   color: white;
   height: 345px;
 }
-.AdsContainer .row .singleAd.textSection .text{
+ .singleAd.textSection .text{
   text-align: center;
 
 }
-.AdsContainer .row .singleAd.textSection .text h5{
+ .singleAd.textSection .text h5{
   margin-bottom: 30px;
   color: white;
 }
-.AdsContainer .row .singleAd.textSection .button{
+ .singleAd.textSection .button{
   width: 100%;
 }
-.AdsContainer .row .singleAd.textSection .button button{
+ .singleAd.textSection .button button{
   width: 100%;
   border: 1px solid white;
   color: white;

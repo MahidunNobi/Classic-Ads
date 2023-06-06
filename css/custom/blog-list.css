@@ -87,18 +87,46 @@
 .blogNav{
   margin: 10px 0;
   padding: 10px 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
+
+.blogNav .leftArrow{
+  width: 30px;
+  margin-right: 10px;
+}
+.blogNav .leftArrow svg{
+  width: 100%;
+  cursor: pointer;
+}
+.blogNav .rightArrow{
+  width: 30px;
+  margin-left: 10px;
+}
+.blogNav .rightArrow svg{
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
 .blogNav ul{
   display: flex;
-  justify-content: space-evenly;
- 
+  overflow-x: scroll;
+  gap: 15px;
+  scroll-behavior: smooth;
 
+}
+.blogNav ul::-webkit-scrollbar{
+  display: none;
 }
 .blogNav ul li a{
   color: white;
   padding: 2px 20px;
   background: #0044bb;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 .blogNav ul li a.active{
   background-color: white;
@@ -219,7 +247,10 @@
     justify-content: center;
   }
   .subBlogs .singleBlogCard .img{
-    width: 240px;
+   width: 110px;
+  }
+  .subBlogs .singleBlogCard .desc h4{
+    font-size: 16px;
   }
   .latestSingleBlog{
     width: 90%;
