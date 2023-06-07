@@ -1165,7 +1165,7 @@ color:  white;
 /* Right Section  */
 /* Our Services Form */
 .form.rightSection{
-width: 95%;
+width: 73%;
 border: 2px solid #0044bb;
 border-radius: 10px;
 display: none;
@@ -1240,6 +1240,9 @@ color:  white;
        width: 100%;
      
    }
+   .form.rightSection{
+    width: 95%;
+  }
 }
 
 /*=====================================

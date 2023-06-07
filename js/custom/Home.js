@@ -307,9 +307,10 @@ findServiceBtn.addEventListener("click", ()=>{
   window.innerWidth <= 911 && window.scrollBy(0, 600)
 })
 const OurServicesBtns = document.querySelectorAll(".ServicesContainer .allSections .singleSec button")
-const OurServicesCloseFormBtn = document.querySelector(".closeFormDiv.ServiceCloseFormDiv")
+const OurServicesCloseFormBtn = document.querySelector("button.closeServiceFormBtn")
 
 const OurServicesForm = document.querySelector(".mainToolsRaper .form ")
+
 
 OurServicesCloseFormBtn.addEventListener("click", ()=>{
   OurServicesForm.classList.remove("active")
@@ -359,6 +360,7 @@ ThankUCloseBtnHome.forEach((e, i)=>{
     ThankYouMessageBox[i].classList.remove("active")
   })
 })
+
 
 
 

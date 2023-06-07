@@ -57,11 +57,15 @@ section.hero {
     display: flex;
     justify-content: center;
 }
+.mainSingleBenefit{
+    width: 50%;
+    
+}
 .benefits .secondRow .singleBenefit{
-    width: 45%;
+    width: 95%;
     height: 100px;
 }
-.benefits .secondRow .singleBenefit:nth-child(1){
+.benefits .secondRow .mainSingleBenefit:nth-child(1){
     border-right: 1px solid #e6e6e6;
 }
 
@@ -339,14 +343,18 @@ img{
 
         justify-content: center;
     }
+    .mainSingleBenefit{
+        width: 100%;
+        
+    }
     .benefits .secondRow .singleBenefit{
         width: 100%;
         height: auto;
     }
-    .benefits .secondRow .singleBenefit:nth-child(1){
+    .benefits .secondRow .mainSingleBenefit:nth-child(1){
         border-right: none;
     }
-    .benefits .secondRow .singleBenefit:nth-child(2){
+    .benefits .secondRow .mainSingleBenefit:nth-child(2) .singleBenefit{
         border: none;
     }
     .mainMembership .allPlans{

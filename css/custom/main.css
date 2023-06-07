@@ -3874,11 +3874,12 @@ p.openTime {
  .singleAd.textSection .button{
   width: 100%;
 }
- .singleAd.textSection .button button{
+ .singleAd.textSection .button a{
   width: 100%;
   border: 1px solid white;
   color: white;
   border-radius: 10px;
+  text-align: center;
   font-size: 20px;
   padding: 10px 0;
 }
@@ -5921,4 +5922,13 @@ margin-right: 15px;
 
 .relative{
   position: relative;
+}
+.subcategoryBody .form{
+  width: 97%;
+}
+@media (max-width:991px) {
+  .subcategoryBody .form{
+    width: 91%;
+    margin-left: 24px;
+  }
 }
