@@ -295,16 +295,21 @@ tastimonialRightArrow.addEventListener("click", ()=>{
 // Find Service Form
 
 const findServiceBtn = document.querySelector(".ServiceEnquiryForm")
-const findServiceCloseBtn = document.querySelector(".closeFormDiv button")
-const Form = document.querySelector(".form ")
+const findServiceCloseBtn = document.querySelectorAll(".closeFormDiv button")
+const DextopForm = document.querySelector(".form.dextopForm")
+const MobileForm = document.querySelector(".images .form ")
 
-findServiceCloseBtn.addEventListener("click", ()=>{
-  Form.classList.remove("active")
+findServiceCloseBtn.forEach((e, i)=>{
+  e.addEventListener("click", ()=>{
+    DextopForm.classList.remove("active")
+    MobileForm.classList.remove("active")
+  })
 })
 
 findServiceBtn.addEventListener("click", ()=>{
-  Form.classList.add("active")
-  window.innerWidth <= 911 && window.scrollBy(0, 600)
+  window.innerWidth>= 991? DextopForm.classList.add("active") : MobileForm.classList.add("active")
+  window.scrollBy(0, 300)
+  
 })
 const OurServicesBtns = document.querySelectorAll(".ServicesContainer .allSections .singleSec button")
 const OurServicesCloseFormBtn = document.querySelector("button.closeServiceFormBtn")
@@ -331,6 +336,7 @@ FindServiceRightSecCloseBtn.addEventListener("click",() =>{
 
 FindServiceRightSecBtn.addEventListener("click", ()=>{
   FindServiceRightSecBtnForm.classList.add("active")
+  window.scrollBy(0, 200)
 })
 
 
