@@ -615,6 +615,14 @@ margin-right: 10px;
   justify-content: space-between;
   width: 69%;
 }
+.ad-details-card .row{
+  display: block;
+}
+.ad-details-card .form{
+  width: 96%;
+  margin: 0 auto;
+  background-color: white;
+}
 @media (max-width:992px) {
   .common-card.price, .common-card.number{
     display: block;
@@ -645,5 +653,8 @@ margin-right: 10px;
   }
   .product-card{
     margin: 0;
+  }
+  .ad-details-card .form{
+    width: 84%;
   }
 }
