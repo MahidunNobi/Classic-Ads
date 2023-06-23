@@ -11,7 +11,7 @@ body {
 
 .adpost-card {
   margin-bottom: 30px;
-  padding: 30px 30px 0px 30px;
+  padding: 30PX;
   background: var(--white);
   border-radius: 8px;
 }
@@ -118,5 +118,86 @@ body {
   }
   .pb-4 .btn {
     padding: 14px 25px;
+  }
+}
+/* Custom Css */
+.singleSection{
+  display: flex;
+  justify-content: space-between;
+}
+.form-group{
+  width: 30%;
+}
+ .form-group{
+  width: 30%;
+
+}
+.secondSection .form-group.productTitle,
+.thirdSection .form-group.productTitle{
+  width: 65%;
+}
+
+.thirdSection .form-group.stateCity{
+  display: flex;
+  justify-content: space-between;
+}
+.thirdSection .city{
+  width: 45%;
+}
+.form-group .Links{
+  display: none;
+  justify-content: space-between;
+}
+.form-group .Links button i{
+  font-size: 25px;
+}
+.form-group .Links button:nth-child(1) i{
+  color:  #1877F2;
+}
+.form-group .Links button:nth-child(2) i{
+  color:  #00acee;
+}
+.form-group .Links button:nth-child(3) i{
+  color:  #0072b1;
+}
+.form-group .Links button:last-child i{
+  color: red;
+}
+.socialLinkInput{
+  display: none;
+}
+.flex{
+  display: flex !important;
+}
+.active{
+  display: block !important;
+}
+.singleSection .productDesctiption{
+  width: 48%;
+}
+.singleSection .productDesctiption textarea{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .singleSection{
+    flex-direction: column;
+    justify-content: center;
+  }
+ .form-group{
+    width: 100% !important;
+  }
+  .thirdSection .form-group.stateCity{
+    display: block;
+    
+  }
+  .thirdSection .city{
+    width: 100%;
+  }
+  .singleSection .productDesctiption{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
   }
 }
