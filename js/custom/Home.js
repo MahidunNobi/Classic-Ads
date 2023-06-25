@@ -268,29 +268,29 @@ NewsRightArrow.addEventListener("click", ()=>{
 //         TASTIMONIALS
 //========================================
 // tastimonialContainer
-const tastimonialUl = document.querySelector(".tastimonialContainer ul")
-const tastimonialLeftArrow = document.querySelector(".tastimonialContainer .leftArrow")
-const tastimonialRightArrow = document.querySelector(".tastimonialContainer .rightArrow")
+const testimonialUl = document.querySelector(".testimonialContainer ul")
+const testimonialLeftArrow = document.querySelector(".testimonialContainer .leftArrow")
+const testimonialRightArrow = document.querySelector(".testimonialContainer .rightArrow")
 
-const tastimonialMaxScrollValue = tastimonialUl.scrollWidth - tastimonialUl.clientWidth -20
+const testimonialMaxScrollValue = testimonialUl.scrollWidth - testimonialUl.clientWidth -20
 
-tastimonialUl.addEventListener("scroll", ()=>{
-  if(tastimonialUl.scrollLeft >=20){
-    tastimonialLeftArrow.classList.add("active")
+testimonialUl.addEventListener("scroll", ()=>{
+  if(testimonialUl.scrollLeft >=20){
+    testimonialLeftArrow.classList.add("active")
   }else{
-    tastimonialLeftArrow.classList.remove("active")
+    testimonialLeftArrow.classList.remove("active")
   }
-  if(tastimonialUl.scrollLeft >= tastimonialMaxScrollValue){
-    tastimonialRightArrow.classList.remove("active")
+  if(testimonialUl.scrollLeft >= testimonialMaxScrollValue){
+    testimonialRightArrow.classList.remove("active")
   }else{
-    tastimonialRightArrow.classList.add("active")
+    testimonialRightArrow.classList.add("active")
   }
 })
-tastimonialLeftArrow.addEventListener("click", ()=>{
-  tastimonialUl.scrollLeft -= 400
+testimonialLeftArrow.addEventListener("click", ()=>{
+  testimonialUl.scrollLeft -= 400
 })
-tastimonialRightArrow.addEventListener("click", ()=>{
-  tastimonialUl.scrollLeft += 400
+testimonialRightArrow.addEventListener("click", ()=>{
+  testimonialUl.scrollLeft += 400
 })
 // Find Service Form
 
