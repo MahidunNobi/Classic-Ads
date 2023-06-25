@@ -173,3 +173,25 @@ body {
     padding: 50px 0px 50px;
   }
 }
+
+/* Custom Code */
+.mainContainer form{
+  text-align: center;
+}
+.setting {
+  margin: 50px 0;
+}
+.setting .mainContainer{
+  background-color: white;
+  padding: 30px;
+}
+.form-container{
+  display: flex;
+  justify-content: space-between;
+}
+.labelInput{
+  width: 30%;
+}
+.changePassword{
+  margin-top: 15px;
+}

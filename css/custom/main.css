@@ -5733,6 +5733,7 @@ margin-right: 15px;
   color: var(--heading);
   background: var(--white);
   border-bottom: 2px solid var(--white);
+  white-space: nowrap;
 }
 
 .dash-menu-list ul li .active {

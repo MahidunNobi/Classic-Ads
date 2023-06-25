@@ -196,27 +196,14 @@
                             <ul class="navbar-list">
                                 <li class="navbar-item"><a class="navbar-link" href="dashboard.html">Dashboard</a></li>
                                 <li class="navbar-item"><a class="navbar-link" href="profile.html">Profile</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="ad-post.html">Ad Post</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="ad-post.html">Create New ad</a></li>
                                 <li class="navbar-item"><a class="navbar-link" href="my-ads.html">My Ads</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="setting.html">Settings</a></li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="bookmark.html">
-                                        <span>bookmark</span>
-                                        <span>0</span>
-                                    </a>
-                                </li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="message.html">
-                                        <span>Message</span>
-                                        <span>0</span>
-                                    </a>
-                                </li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="notification.html">
-                                        <span>Notification</span>
-                                        <span>0</span>
-                                    </a>
-                                </li>
+                                <li class="navbar-item"><a class="navbar-link" href="notification.html">Enquire</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="bookmark.html">Transection</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="message.html">Feedback</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="setting.html">Setting</a></li>
+                             
+                                
                                 <li class="navbar-item"><a class="navbar-link" href="user-form.html">Logout</a></li>
                             </ul>
                         </div>
@@ -355,101 +342,35 @@
         <!--=====================================
                     SETTING PART START
         =======================================-->
-        <div class="setting-part">
+        <div class="setting">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="account-card alert fade show">
-                            <div class="account-title">
-                                <h3>Edit Profile</h3>
-                                <button data-dismiss="alert">close</button>
-                            </div>
-                            <form class="setting-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">First Name</label>
-                                            <input type="text" class="form-control" placeholder="Mahmudul">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Hasan">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Company</label>
-                                            <input type="text" class="form-control" placeholder="Classicads Advertising LID.">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Address</label>
-                                            <input type="text" class="form-control" placeholder="1420, West Jalkuri, Narayanganj, Bangladesh">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">City</label>
-                                            <input type="text" class="form-control" placeholder="Narayanganj">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">State</label>
-                                            <input type="text" class="form-control" placeholder="West Jalkuri">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Post Code</label>
-                                            <input type="text" class="form-control" placeholder="1420">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Country</label>
-                                            <input type="text" class="form-control" placeholder="Bangladesh">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Website</label>
-                                            <input type="text" class="form-control" placeholder="https://mironmahmud.com">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Phone</label>
-                                            <input type="text" class="form-control" placeholder="+8801838288389">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Birthday</label>
-                                            <input type="date" class="form-control" value="1995-02-02">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Profile Image</label>
-                                            <input type="file" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <button class="btn btn-inline">
-                                            <i class="fas fa-user-check"></i>
-                                            <span>update profile</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <div class="mainContainer"> 
+
+                    <h3> Change Password </h3>
+                    <form action=""> 
+                    <div class="form-container">
+                    
+                        <div class="labelInput"> 
+                            <label for="currentPass" class= "form-label"> Current Password:</label>
+                            <input type="text" placeholder="Current Password" class="form-control" name="currentPass">
+                        </div>  
+                        <div class="labelInput"> 
+                            <label for="newPass" class= "form-label"> New Password:</label>
+                            <input type="text" placeholder="New Password" class="form-control" name="newPass">
+                        </div>  
+                        <div class="labelInput"> 
+                            <label for="retypePass" class= "form-label"> Re-type Password:</label>
+                            <input type="text" placeholder="Re-type Password" class="form-control" name="retypePass">
+                        </div>       
                     </div>
+
+                    <button class="btn changePassword"> Change</button>
+
+                    </form>
+
                 </div>
             </div>
+
         </div>
         <!--=====================================
                     SETTING PART END
@@ -665,6 +586,18 @@
 
         <!-- CUSTOM -->
         <script src="js/custom/main.js"></script>
+        
+        <script>
+
+            const changePasswordForm = document.querySelector(".mainContainer form")
+            changePasswordForm.addEventListener("submit", (e)=>{
+                e.preventDefault()
+            })
+
+        </script>
+
+
+
         <!--=====================================
                     JS LINK PART END
         =======================================-->
