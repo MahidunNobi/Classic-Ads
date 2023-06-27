@@ -438,22 +438,25 @@
                                                 <label class="form-label">GSTN/PAN:</label>
                                                 <input type="text" class="form-control" placeholder="Type Pan Number">
                                             </div> 
-                                            <div class="form-group">
-                                                <label class="form-label">Social Link:</label>
-                                                <div class="Links flex">
-                                                    <button href="#"> <i class="fa-brands fa-facebook"></i></button>
-                                                    <button href="#"><i class="fa-brands fa-twitter"></i> </button>
-                                                    <button href="#"> <i class="fa-brands fa-linkedin-in"></i></i></a>
-                                                    <button href="#"> <i class="fa-brands fa-youtube"></i></button>
-                                                </div>
-                                                <input type="text" class="form-control socialLinkInput" placeholder=" https://www.xyz.com" >
-                                            </div>
+                                          
                                             <div class="form-group">
                                                 <label class="form-label">Website:</label>
                                                 <input type="text" class="form-control" placeholder="www.youtube.com">
                                             </div>
                                         </div>
-                                        <!-- Images Uploading Section -->
+                                        <!-- Social LinKs -->
+                                        <div class="singleSection socialLinks">
+                                            
+                                                <h3 class="form-label">Social Links:</h3>
+                                                <input class="form-control" type="text" placeholder="Facebook">
+                                                <input class="form-control" type="text" placeholder="Twitter">
+                                                <input class="form-control" type="text" placeholder="Linkedin">
+                                                <input class="form-control" type="text" placeholder="Youtube">
+                                               
+                                            
+                                            
+                                        </div>
+                                        
                                         <div class="singleSection ">
                                             <div class="form-group">
                                                 <label class="form-label">Select Category:</label>
@@ -475,10 +478,27 @@
                                                     <option value="Hospitality"> Hospitality</option>
                                                     <option value="Food"> Food</option>
                                                 </select>
+                                            </div>                                            
+                                        </div>
+                                        <!-- Images Uploading Section -->
+                                        <div class="singleSection imageUploader">
+                                            <div class="title">
+                                                <h3>Upload Product Images</h3>
+                                                <p style="color: #c1bfbf;"> Max 7 Images </p>
                                             </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Product Image:</label>
-                                                <input type="file" style="cursor: pointer;" class="" placeholder="Name Of Company">
+                                            <div class="uploadedImages">
+                                                
+                                                <div class="allImages"> 
+
+                                                    
+
+                                                </div>
+                                                
+                                                <div class="singleImage imageUploader">
+                                                    <i class="fa-duotone fa-plus"></i>
+                                                    <input type="file" class="uploadImg" multiple="multiple" accept="image/png, image/jpeg, image/jpg">
+                                                </div>
+                                           
                                             </div>
                                         </div>
                                         <div class="singleSection ">
@@ -548,23 +568,28 @@
                                                 <label class="form-label">Offers :</label>
                                                 <input type="text" class="form-control" placeholder="4 Liter Only Rs.200">
                                                 
-                                            </div> 
-                                            <div class="form-group">
-                                                <label class="form-label">		Key Features  :</label>
-                                                <input type="text" class="form-control" placeholder="First Key Features">
-
-                                            </div>
+                                            </div>                                             
                                         </div>
+                                        <!-- Key Features -->
+                                        <div class="singleSection socialLinks keyfeatures">
+                                            
+                                            <h3 class="form-label">Key Features:</h3>
+                                            <input class="form-control" type="text" placeholder="Features 1">
+                                            <input class="form-control" type="text" placeholder="Features 2">
+                                            <input class="form-control" type="text" placeholder="Features 3">
+                                            <input class="form-control" type="text" placeholder="Features 4">
+                                           
+                                        
+                                        
+                                     </div>
                                         <div class="singleSection " style="margin-bottom: 20px;">
                                             <div class="productDesctiption" >
                                                 <label class="form-label">		Product Description  :</label>
-                                                <textarea class="form-control" maxlength="50" placeholder="Max 50 character">
-                                                </textarea>
+                                                <textarea class="form-control" maxlength="50" placeholder="Max 50 character"></textarea>
                                             </div>
                                             <div class="productDesctiption" >
                                                 <label class="form-label">		Company Description  :</label>
-                                                <textarea class="form-control" maxlength="50" placeholder="Max 50 character">
-                                                </textarea>
+                                                <textarea class="form-control" maxlength="50" placeholder="Max 50 character"></textarea>
                                             </div>
                                     </div>
                                    
