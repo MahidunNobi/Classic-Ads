@@ -141,7 +141,7 @@ img{
     font-size: 18px;
     margin: 0 0 20px 40px ;
 }
-.mainMembership .allPlans .singlePlan .Btn button{
+.mainMembership .allPlans .singlePlan .Btn a{
     font-size: 18px;
     border: 1px solid #0044bb;
     padding: 10px 30px;

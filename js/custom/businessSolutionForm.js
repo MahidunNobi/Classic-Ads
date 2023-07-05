@@ -7,7 +7,11 @@ const formDivs = document.querySelectorAll(".form")
 // const submitBtns = document.querySelectorAll(".mainMembership .allPlans .form .Btn button")
 const closeFormsBtn = document.querySelectorAll(".closeFormDiv button")
 
-
+document.querySelectorAll("form").forEach(e => {
+    e.addEventListener("submit", (x)=>{
+        x.preventDefault()
+    })
+})
 
 // submitBtns.forEach((e,i) => {
 //     e.addEventListener("click", ()=>{
@@ -24,6 +28,7 @@ function clearAllForms(){
 function MobileFormsOpen(i){
     clearAllForms()
     allForms[i].classList.add("active")
+   
 }
 
 function DextopFormsOpen(i){
@@ -34,6 +39,7 @@ function DextopFormsOpen(i){
 allBtns.forEach((e,i) => {
     e.addEventListener("click", ()=>{
        window.innerWidth >= 991 ? DextopFormsOpen(i) : MobileFormsOpen(i);;
+       window.scrollBy(0, 200)
     })
 })
 
