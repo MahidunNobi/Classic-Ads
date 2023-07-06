@@ -283,7 +283,7 @@
         
        
           <!--=====================================
-                   MEMBERSHIP  PART START
+                   MEMBERSHIP Form  PART START
         =======================================-->
         <section class="membership">
             <div class="container">
@@ -292,7 +292,7 @@
                     <div class="allPlans">                        
                         <div class="form relative active">
                             <div class="closeFormDiv"> 
-                                <button class="closeFormBtn"> <i class="fa-solid fa-x"></i></button> 
+                                
                                 <h2> We’re here for You</h2>
                             </div>
                             <form action="">
@@ -300,47 +300,61 @@
                                 <div class="inputRows"> 
                                     <div class="inputRow">
                                         <label for="name">Name:</label>
-                                        <input type="text" name="name" placeholder="Enter Full Name" id="name">
+                                        <input type="text" name="name" placeholder="Enter Full Name" id="name" >
 
                                         <label for="Email">
                                             Email:
                                         </label>
-                                        <input type="text" id="Email" name="Email" placeholder="Enter E-mail">
+                                        <input type="email" id="Email" name="Email" placeholder="Enter E-mail" >
 
                                         <label for="city">City:</label>
-                                        <input type="text" id="city" name="city" placeholder="Enter City">
+                                        <input type="text" id="city" name="city" placeholder="Enter City" >
                                     </div>
                                     <div class="inputRow"> 
                                         
                                         <label for="address">Address:</label>
-                                        <input type="text" id="address" name="address" placeholder="Enter Address">
+                                        <input type="text" id="address" name="address" placeholder="Enter Address" >
                                        
     
                                         <label for="contactNum">
                                             Contact Number:
                                         </label>
-                                        <input type="text" id="contactNum" name="contactNum" placeholder="Enter Number">
+                                        <input type="text" id="contactNum" name="contactNum" placeholder="Enter Number" >
                                         
-                                        <label for="selectBannerType">
-                                            Select Banner Type:
+                                        <label for="selectMembershipPlan">
+                                            Select Membership Plan:
                                         </label>
-                                        <select name="selectBannerType" id="selectBannerType">
+                                        <select name="selectMembershipPlan" id="selectMembershipPlan" >
 
                                             <option value="none">none</option>
-                                            <option value="homePage">Home Page</option>
-                                            <option value="categoryBanner"> Category Banner</option>
-                                            <option value="SubCategoryBanner"> Sub Category Banner </option>                                        
+                                            <option value="premiumBanners">Premium Banners</option>
+                                            <option value="featuredProduct"> Featured Product</option>
+                                            <option value="sponsoredPost"> Sponsored Post </option>                                        
+                                            <option value="trustedBadges"> Trusted Badges </option>                                        
+                                            <option value="buildReview"> Build Review  </option>                                        
+                                            <option value="membership"> Membership  </option>                                        
+                                            <option value="digitalMarketing"> Digital Marketing  </option>                                        
+                                            <option value="crossPromotionPartnership"> Cross- Promotion Partnership  </option>                                        
+                                                                                  
                                             
                                         </select>    
-                                        
-    
                                     </div>
 
                                     <div class="inputRow">
+
+                                        <label for="selectBannerType">
+                                            Select Banner Type:
+                                        </label>
+                                        <select name="selectBannerType" id="selectBannerType" >
+
+                                            <option value="none">none</option>
+                                                                                   
+                                            
+                                        </select>   
                                         <label for="selectCategory">
                                             Select Category:
                                         </label>
-                                        <select name="selectCategory" id="selectCategory">
+                                        <select name="selectCategory" id="selectCategory" >
                                             <option id="Select-City"> Select Categorie </option>
                                             <option> All Category </option>
                                             <option> Jobs </option>
@@ -374,10 +388,14 @@
                                             <option>Food and Beverages</option>
                                             <option>Volunteer and Charity</option>
                                         </select>
-                                       
-    
-                                        
-
+                                        <label for="selectPackage">
+                                            Select Available Packages:
+                                        </label>
+                                        <select name="selectPackage" id="selectPackage" >
+                                            <option value="none">
+                                                Select One Banner Type
+                                            </option>      
+                                        </select> 
                                     </div>
                                 
                             </div>

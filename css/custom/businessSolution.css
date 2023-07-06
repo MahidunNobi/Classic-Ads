@@ -294,6 +294,9 @@ img{
     background: white;
     color: #0044bb;
 }
+.closeFormDiv {
+    padding: 20px 0;
+}
 @media (max-width: 911px) {
     .mainMembership .allPlans .singlePlan .img {
         height: 130px ;
