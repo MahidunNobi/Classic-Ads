@@ -297,6 +297,36 @@ img{
 .closeFormDiv {
     padding: 20px 0;
 }
+
+.captcha{
+    text-align: center;
+}
+.captcha input:first-child{
+    letter-spacing: 17px;
+    user-select: none;
+    background-color: #a7a6a6;
+}
+.captcha input {
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+}
+.refresh{
+    margin-left: -40px;
+    background: #333;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 15px;
+    transition: all 0.1s;
+}
+.refresh:active{
+    transform: scale(0.9);
+}
+
+
 @media (max-width: 911px) {
     .mainMembership .allPlans .singlePlan .img {
         height: 130px ;

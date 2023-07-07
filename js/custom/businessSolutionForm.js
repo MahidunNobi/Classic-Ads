@@ -7,12 +7,8 @@ const allForms = document.querySelector(".mainMembership .allPlans .form ")
 // const closeFormsBtn = document.querySelectorAll(".closeFormDiv button")
 
 
-    allForms.addEventListener("submit", (x)=>{
-        x.preventDefault()
-    })
-    allBtns.addEventListener("click", ()=>{
-        console.log("Ok");
-    })
+    
+    
 // submitBtns.forEach((e,i) => {
 //     e.addEventListener("click", ()=>{
 //         formDivs[i].innerHTML="<p style='text-align:center;'> We have received your message and appreciate your time and effort in contacting us. Our team will carefully review your submission and get back to you as soon as possible. </p>"
@@ -67,27 +63,14 @@ const allForms = document.querySelector(".mainMembership .allPlans .form ")
 //     window.innerWidth >= 991 ? dextopClick(): mobileClick()
 // })
 
-// Thank you Close Btn....
-const ThankUCloseBtnHome = document.querySelector(".mainThankU .closeBtn button")
-const ThankYouMessageBox = document.querySelector(".ThankU")
 
-
-
-  allBtns.addEventListener("click", ()=>{
-    ThankYouMessageBox.classList.add("active")
-    window.innerWidth <=991 && window.scrollBy(0, -400)
-    
-})
-
-    ThankUCloseBtnHome.addEventListener("click", ()=>{
-    ThankYouMessageBox.classList.remove("active")
-  })
 
 //   FORMS SELECTIONS FUNCTIONS
 const selectMembershipPlan = document.querySelector("#selectMembershipPlan")
 const selectBannerType = document.querySelector("#selectBannerType")
 const selectCategory = document.querySelector("#selectCategory")
 const selectPackage = document.querySelector("#selectPackage")
+const selectLabelChange = document.querySelector("#selectChangeLabel")
 
 // SELECT MEMBERSHIP
 
@@ -102,7 +85,8 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;
+                                    </option>  `
+            selectLabelChange.textContent = "Select Banner Type";            
             break;
 
         case "featuredProduct":
@@ -114,7 +98,8 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `
+            selectLabelChange.textContent = "Select Place"; 
                 break;
 
         case "sponsoredPost":
@@ -126,7 +111,8 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `;
+            selectLabelChange.textContent = "Select Place"; 
             break;
 
         case "trustedBadges":
@@ -142,7 +128,8 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `;
+            selectLabelChange.textContent = "Select Badge"; 
             break;
 
         case "buildReview":
@@ -153,7 +140,8 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `
+            selectLabelChange.textContent = "Select Review";                                     
             break;
 
         case "membership":
@@ -162,10 +150,11 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             <option value="silver">Silver</option>
             <option value="gold"> Gold</option>
             <option value="platinum"> Platinum</option>  
-            `
+            `;
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `;
+            selectLabelChange.textContent = "Select Membership";                
             break;
 
         case "digitalMarketing":
@@ -180,7 +169,7 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `;            
             break;
 
         case "crossPromotionPartnership":
@@ -380,5 +369,49 @@ selectBannerType.addEventListener("change", (e)=>{
 
 
 
+// Captcha Funtionality
 
+const  autoCaptcha = document.querySelector("#autoCaptcha")
+const  userCaptcha = document.querySelector("#userCaptcha")
+const captchaRefreshBtn = document.querySelector(".refresh")
+
+function autoCaptchaLoad (){
+    let Captcha = Math.random().toString(36).substring(2, 7)
+    autoCaptcha.value = Captcha
+    
+}
+autoCaptchaLoad ()
+
+captchaRefreshBtn.addEventListener("click", ()=>{
+    autoCaptchaLoad()
+})
+
+
+// Thank you Close Btn....
+const ThankUCloseBtnHome = document.querySelector(".mainThankU .closeBtn button")
+const ThankYouMessageBox = document.querySelector(".ThankU")
+const termsCheck = document.querySelector("#termsCheck")
+allForms.addEventListener("submit", (x)=>{
+    x.preventDefault();
+
+autoCaptcha.value === userCaptcha.value ? 
+  termsCheck.checked ?  x.currentTarget.submit() : alert("Please agree to our terms and conditions")
+  : alert("Please Enter Right Captcha");
+
+  ThankYouMessageBox.classList.add("active")
+})
+
+  allBtns.addEventListener("submit", (e)=>{
+  
+    // window.innerWidth <=991 && window.scrollBy(0, -50)
+    
+})
+
+    ThankUCloseBtnHome.addEventListener("click", ()=>{
+
+    ThankYouMessageBox.classList.remove("active")
+    document.querySelectorAll("input").forEach(e=>{
+        e.value=""
+    })
+  })
 
