@@ -170,14 +170,20 @@ img{
 .mainMembership .allPlans .form.active{
     display: block;
 }
-.mainMembership .allPlans .form .inputRows{
+/* .mainMembership .allPlans .form .inputRows{
     display: flex;
     justify-content: space-between;
-}
+} */
 .mainMembership .allPlans .form .inputRows .inputRow{
-    width: 30%;
-  
+    /* width: 30%; */
+    display: flex;  
+    justify-content: space-between;
 }
+.mainMembership .allPlans .form .inputRows .inputRow .inputField{
+    width: 30%;
+}
+
+
 .mainMembership .allPlans .form .inputRows .inputRow input{
     width: 100%;
     border: 2px solid #ddd;
@@ -224,12 +230,12 @@ img{
     color:  white;
 }
 @media (max-width:991px) {
-    .mainMembership .allPlans .form .inputRows{
+    .mainMembership .allPlans .form .inputRows .inputRow{
        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .mainMembership .allPlans .form .inputRows .inputRow{
+    .mainMembership .allPlans .form .inputRows .inputRow .inputField{
         width: 100%;
       
     }
