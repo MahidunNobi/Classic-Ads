@@ -70,7 +70,11 @@ const selectMembershipPlan = document.querySelector("#selectMembershipPlan")
 const selectBannerType = document.querySelector("#selectBannerType")
 const selectCategory = document.querySelector("#selectCategory")
 const selectPackage = document.querySelector("#selectPackage")
+const selectPackageTitle = document.querySelector("#selectPackageTitle")
 const selectLabelChange = document.querySelector("#selectChangeLabel")
+const enterMgsBox = document.querySelector(".enterMgsBox")
+
+// const selectPackageContainer = document.querySelector(".selectPackageContainer")
 
 // SELECT MEMBERSHIP
 
@@ -86,7 +90,10 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
                                     </option>  `
-            selectLabelChange.textContent = "Select Banner Type";            
+            selectLabelChange.textContent = "Select Banner Type";   
+            selectPackageTitle.textContent = "Select Available Packages:"
+            selectPackage.classList.remove("hidden");
+            enterMgsBox.classList.add("hidden")           
             break;
 
         case "featuredProduct":
@@ -100,6 +107,9 @@ selectMembershipPlan.addEventListener("change", (e)=>{
                                     Select One Banner Type
                                     </option>  `
             selectLabelChange.textContent = "Select Place"; 
+            selectPackageTitle.textContent = "Select Available Packages:"
+            selectPackage.classList.remove("hidden");
+            enterMgsBox.classList.add("hidden")  
                 break;
 
         case "sponsoredPost":
@@ -113,6 +123,9 @@ selectMembershipPlan.addEventListener("change", (e)=>{
                                     Select One Banner Type
                                     </option>  `;
             selectLabelChange.textContent = "Select Place"; 
+            selectPackageTitle.textContent = "Select Available Packages:"
+            selectPackage.classList.remove("hidden");
+            enterMgsBox.classList.add("hidden")  
             break;
 
         case "trustedBadges":
@@ -130,6 +143,9 @@ selectMembershipPlan.addEventListener("change", (e)=>{
                                     Select One Banner Type
                                     </option>  `;
             selectLabelChange.textContent = "Select Badge"; 
+            selectPackageTitle.textContent = "Select Available Packages:"
+            selectPackage.classList.remove("hidden");
+            enterMgsBox.classList.add("hidden")  
             break;
 
         case "buildReview":
@@ -141,7 +157,10 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
                                     </option>  `
-            selectLabelChange.textContent = "Select Review";                                     
+            selectLabelChange.textContent = "Select Review";  
+            selectPackageTitle.textContent = "Select Available Packages:"
+            selectPackage.classList.remove("hidden");
+            enterMgsBox.classList.add("hidden")                                     
             break;
 
         case "membership":
@@ -154,7 +173,10 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
                                     </option>  `;
-            selectLabelChange.textContent = "Select Membership";                
+            selectLabelChange.textContent = "Select Membership";     
+            selectPackageTitle.textContent = "Select Available Packages:"
+            selectPackage.classList.remove("hidden");
+            enterMgsBox.classList.add("hidden")            
             break;
 
         case "digitalMarketing":
@@ -169,7 +191,11 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;            
+                                    </option>  `;    
+            selectLabelChange.textContent = "Select Service";  
+            selectPackageTitle.textContent = "Your Message"
+            selectPackage.classList.add("hidden");
+            enterMgsBox.classList.remove("hidden")    
             break;
 
         case "crossPromotionPartnership":
@@ -181,7 +207,12 @@ selectMembershipPlan.addEventListener("change", (e)=>{
             `
             selectPackage.innerHTML = ` <option value="none">
                                     Select One Banner Type
-                                    </option>  `;;
+                                    </option>  `;
+            selectLabelChange.textContent = "Select Service";      
+            selectPackageTitle.textContent = "Your Message"
+            selectPackage.classList.add("hidden");
+            enterMgsBox.classList.remove("hidden")    
+            
             break;
 
         default:
@@ -309,60 +340,10 @@ selectBannerType.addEventListener("change", (e)=>{
             break;
 
         // Digital Marketing Packges
-        case "contentMarketing":
-            selectPackage.innerHTML = `<option value="contentMarketing">
-                            Please fill the Form 
-                                    </option>`;
-            break;
-        case "facebookAds":
-            selectPackage.innerHTML = `<option value="facebookAds">
-            Please fill the Form 
-                                    </option>`;
-            break;
-        case "googleAds":
-            selectPackage.innerHTML = `<option value="googleAds">
-            Please fill the Form 
-                                    </option>`;
-            break;
-        case "socialMediaManagement":
-            selectPackage.innerHTML = `<option value="socialMediaManagement">
-            Please fill the Form 
-                                    </option>`;
-            break;
-        case "websiteDevelopment":
-            selectPackage.innerHTML = `<option value="websiteDevelopment">
-            Please fill the Form 
-                                    </option>`;
-            break;
-        case "graphicVideo":
-            selectPackage.innerHTML = `<option value="graphicVideo">
-            Please fill the Form 
-                                    </option>`;
-            break;
         
-            // Cross- Promotion Partnership Package
-        case "referralMarketing":
-            selectPackage.innerHTML = `<option value="referralMarketing">
-                            Please fill the Form 
-                                    </option>`;
-            break;
-        case "affiliateMarketing":
-            selectPackage.innerHTML = `<option value="affiliateMarketing">
-            Please fill the Form 
-                                    </option>`;
-            break;
-        case "coBranding&Selling":
-            selectPackage.innerHTML = `<option value="coBranding&Selling">
-            Please fill the Form 
-                                    </option>`;
-            break;
         
-
-        case "none": 
-            selectPackage.innerHTML = ` <option value="none">
-            Select One Banner Type
-        </option>  `
-        break;
+        // Cross- Promotion Partnership Package
+        
         
         }
 })
