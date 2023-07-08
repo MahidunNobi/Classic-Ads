@@ -11,7 +11,7 @@ body {
 
 .adpost-card {
   margin-bottom: 30px;
-  padding: 30PX;
+  padding: 30px 20px;
   background: var(--white);
   border-radius: 8px;
 }
@@ -128,9 +128,20 @@ body {
 .form-group{
   width: 30%;
 }
- .form-group{
-  width: 30%;
-
+.singleSection.gstSelect .form-group{
+  width: 23%;
+}
+.adpost-card .col-lg-12{
+  padding: 0;
+}
+.submitBtnSection.pb-2 {
+  margin-top: 80px;
+}
+.row{
+  margin: auto;
+}
+.alert{
+  margin: 0 auto 50px;
 }
 .secondSection .form-group.productTitle,
 .thirdSection .form-group.productTitle{
@@ -257,6 +268,9 @@ body {
   opacity: 0;
   cursor: pointer;
 }
+.col-lg-12{
+  padding: 0;
+}
 
 @media (max-width: 991px) {
   .singleSection{
@@ -282,4 +296,8 @@ body {
     width: 100%;
     margin-bottom: 10px;
   }
+  .saftyContainer.account-card {
+    width: 90%;
+    margin: auto;
+}
 }

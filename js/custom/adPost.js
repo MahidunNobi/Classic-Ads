@@ -58,3 +58,10 @@ function deleteItem(i){
 
 // IMAGE UPLOAD End
 
+// Ad Id
+const adId = document.querySelector("#adId")
+
+let RandomId = (Math.random()*1000000).toFixed(0)
+
+adId.value= RandomId
+

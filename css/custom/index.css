@@ -846,11 +846,7 @@ transition: all 0.3s;
 color: white;
 background: #0044bb;
 }
-@media (max-width: 600px) {
-.mainNewsSection .catagoryList{
-width: 90%;
-}
-}
+
 
 /*=====================================
     OUR SERVICE AND TOOLS START
@@ -969,7 +965,13 @@ display: none;
 display: block;
 }
 
+.nav.navUl li {
+  width: auto;
+}
 
+#ratingSection.row{
+  margin: auto;
+}
 
 
 .testimonialC{

@@ -116,6 +116,9 @@ img{
     border-radius: 10px;
     margin: 10px 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .mainMembership .allPlans .singlePlan h2{
     font-size: 30px;
@@ -230,6 +233,10 @@ img{
         width: 100%;
       
     }
+     h1 {
+     
+        font-size: 32px;
+    }
     
 }
 .marchant{
@@ -282,7 +289,7 @@ img{
     color: white;
     border: none;
 }
-.mainInterested .btn button{
+.mainInterested .btn a{
     border: 2px solid white;
     color: white;
     padding: 10px 30px;
@@ -290,7 +297,7 @@ img{
     border-radius: 10px;
     transition: all 0.3s;
 }
-.mainInterested .btn button:hover{
+.mainInterested .btn a:hover{
     background: white;
     color: #0044bb;
 }
