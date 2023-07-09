@@ -560,7 +560,9 @@ color: white;
 text-align: right;
 }
 
-
+.main7Section .section2 h3 {
+  margin-top: -18px;
+}
 
 .brands div.topRated, .brands div.mostViews{
 display: none;
