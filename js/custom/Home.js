@@ -180,6 +180,9 @@ const NleftArrow = document.querySelector(".NleftArrow")
 const NrightArrow = document.querySelector(".NrightArrow")
 const Nul = document.getElementById("Nul")
 
+
+// Popular brands scroll bar
+
 // Scroll Event Lintener
 Nul.addEventListener("scroll", ()=>{
   if(Nul.scrollLeft >= 20){
