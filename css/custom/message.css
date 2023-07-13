@@ -1,13 +1,10 @@
 /*=====================================
             MESSAGE PAGE STYLE
 ======================================*/
-body {
-  overflow: hidden;
-}
 
 .message-part {
   width: 100%;
-  height: 100vh;
+  
   padding-top: 30px;
   background: var(--chalk);
 }

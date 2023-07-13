@@ -1,15 +1,13 @@
 /*=====================================
          NOTIFICATION PAGE STYLE
 ======================================*/
-body {
-  overflow: hidden;
-}
+
 
 .notify-part {
   width: 100%;
-  height: 100vh;
-  padding-top: 30px;
+  padding-top: 50px;
   background: var(--chalk);
+
 }
 
 .notify-body {

@@ -91,38 +91,21 @@ leftArrowSvg.addEventListener("click", ()=>{
 //         POPULAR BRANDS START
 //========================================
 
-const tRatedBtns = document.querySelectorAll(".tRated")
-const mostViews = document.querySelectorAll(".mostView")
+const allCategoryBtns = document.querySelectorAll(".popularCategoryBtns")
 
-const topRatedSection = document.getElementById("topRated")
-const mostViewsSection = document.getElementById("mostViews")
-
-function removeAllActiveClassFromTabs(){
-  tRatedBtns.forEach(tab => {
-    tab.classList.remove("active")
-  })
-  mostViews.forEach(tab => {
-    tab.classList.remove("active")
-  })
+function clearAllBtns(){
+  allCategoryBtns.forEach(btn=>   btn.classList.remove("active") )
 }
 
-tRatedBtns.forEach(tab => {
-  tab.addEventListener("click", ()=>{
-    removeAllActiveClassFromTabs()
-    tab.classList.add("active")
-    mostViewsSection.classList.remove("active")
-    topRatedSection.classList.add("active")
+allCategoryBtns.forEach(btn=>{
+  
+  btn.addEventListener("click", ()=>{
+    clearAllBtns();
+    // btn.classList.add("active")
   })
 })
-mostViews.forEach(tab => {
-  tab.addEventListener("click", ()=>{
-    removeAllActiveClassFromTabs()
-    tab.classList.add("active")
-    mostViewsSection.classList.add("active")
-    topRatedSection.classList.remove("active")
-  
-    })
-})
+
+
 
 const PleftArrow = document.querySelector(".PleftArrow")
 const PrightArrow = document.querySelector(".PrightArrow")
@@ -237,7 +220,7 @@ Btns.forEach(e=>{
   e.addEventListener("click", (e)=>{
     rmvActiveFromNLinks()
     e.target.classList.add("active")
-    console.log(e.target.value);
+  
   })
 })
 
