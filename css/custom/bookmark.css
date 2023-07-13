@@ -4,10 +4,17 @@
 .dash-header-card {
   box-shadow: var(--primary-bshadow);
 }
-
-.bookmark-part {
-  padding: 50px 0px 70px;
+.tableContainer{
+  overflow-x: scroll;
 }
+.table{
+  min-width: 1150px
+}
+.table table{
+  width: 100%;
+  text-align: center;
+}
+
 
 @media (max-width: 767px) {
   .bookmark-part {
@@ -21,8 +28,3 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .bookmark-part {
-    padding: 50px 0px 50px;
-  }
-}
