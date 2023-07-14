@@ -623,6 +623,15 @@ margin-right: 10px;
   margin: 0 auto;
   background-color: white;
 }
+.container{
+  padding: 0;
+}
+.row{
+  margin: 0;
+}
+.col-lg-8{
+  padding: 0%;
+}
 @media (max-width:992px) {
   .common-card.price, .common-card.number{
     display: block;

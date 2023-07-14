@@ -3753,7 +3753,7 @@ p.openTime {
 .xyz{
   padding: 0 ;
   /* margin: 8px 0; */
-  width: 90%;
+  /* width: 90%; */
   margin: 10px auto;
 }
 .middleBottomSec .price {
@@ -3806,7 +3806,7 @@ p.openTime {
 
   .product-card.standard {
     margin-bottom: 0;
-    margin-left: 8px;
+    /* margin-left: 8px; */
 }
   .contactBtn span.call{
     display: none;
