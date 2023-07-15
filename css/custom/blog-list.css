@@ -111,7 +111,7 @@
 }
 
 
-
+/* 
 .blogNav ul{
   display: flex;
   overflow-x: scroll;
@@ -131,7 +131,68 @@
 .blogNav ul li a.active{
   background-color: white;
   color: #0044bb;
-}
+} */
+.catagoryList{
+
+  display: flex;
+  
+  overflow: hidden;
+  align-items: center;
+  margin: 30px auto;
+  }
+  
+.catagoryList ul{
+  display: flex;
+  
+  margin: 0 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth; 
+  }
+.catagoryList ul.Drage{
+  scroll-behavior: auto;
+  }
+  
+.catagoryList ul::-webkit-scrollbar{
+  display: none;
+  }
+.catagoryList ul li{
+  margin: 0 10px;
+  }
+  .catagoryList ul li a{
+    /* border: 1px solid #0044bb ; */
+    background-color: #0044bb;
+    color: white;
+    padding: 2px 30px;
+    border-radius: 4px;
+    white-space: nowrap;
+    user-select: none;
+    }
+  .catagoryList ul li a.active{
+      background: white;
+      color: #0044bb;
+      }
+  .catagoryList .NleftArrow,
+  .catagoryList .NrightArrow{
+    display: none;
+  }
+  .catagoryList .NleftArrow.active,
+  .catagoryList .NrightArrow.active{
+    display: block;
+  }
+  .catagoryList .NleftArrow svg,
+  .catagoryList .NrightArrow svg{
+    width: 30px ;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .catagoryList .NleftArrow svg:hover,
+  .catagoryList .NrightArrow svg:hover{
+    background: #444;
+    color: white;
+  }
+
 .blogSection{
   margin: 60px 0;
 }

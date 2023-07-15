@@ -210,6 +210,7 @@ Nul.addEventListener("mousemove", (e)=>{
     
   }
 })
+
 const Btns = document.querySelectorAll(".newsCategoryLinks")
 function rmvActiveFromNLinks(){
   Btns.forEach(e => {

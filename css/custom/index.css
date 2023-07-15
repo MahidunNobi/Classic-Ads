@@ -561,7 +561,7 @@ text-align: right;
 }
 
 .main7Section .section2 h3 {
-  margin-top: -18px;
+  /* margin-top: -18px; */
 }
 
 .brands div.topRated, .brands div.mostViews{
@@ -689,11 +689,12 @@ background-position: center;
   text-align: left;
   color: #1451b9;
   font-weight: 2;
+  margin-bottom: 15px;
 }
 .main7Section .section1 ul,
 .main7Section .section2 ul{
   padding: 0 20px;
-  margin: 20px 0;
+  margin: 10px 0;
 color:white;
 list-style-type: disc;
 }
